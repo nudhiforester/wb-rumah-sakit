@@ -1,0 +1,1252 @@
+/* ================================================================
+   RSU El-Syifa Kuningan — style.css
+   Design System & Custom Styles
+   ================================================================ */
+
+/* ========================
+   1. Google Fonts Import
+   ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ========================
+   2. CSS Custom Properties
+   ======================== */
+:root {
+  /* Colors */
+  --color-primary: #07332f;
+  --color-accent: #f7a582;
+  --color-bg-warm: #fff7f4;
+  --color-bg-cool: #f7fcfc;
+  --color-white: #ffffff;
+  --color-text-dark: #07332f;
+  --color-text-light: #f7a582;
+  --color-text-white: #ffffff;
+
+  /* Typography */
+  --font-heading: 'Lora', 'Georgia', 'Times New Roman', serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Spacing */
+  --section-py: 5rem;
+  --section-py-sm: 3.5rem;
+
+  /* Radius */
+  --radius-soft: 12px;
+  --radius-card: 16px;
+  --radius-btn: 8px;
+  --radius-pill: 50px;
+
+  /* Shadows */
+  --shadow-card-light: 0 4px 24px rgba(7, 51, 47, 0.07);
+  --shadow-card-dark: 0 4px 24px rgba(0, 0, 0, 0.12);
+  --shadow-hover: 0 8px 32px rgba(7, 51, 47, 0.12);
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ========================
+   3. Base Reset & Defaults
+   ======================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-base);
+}
+
+/* ========================
+   4. Section Backgrounds (Alternating)
+   ======================== */
+.section-warm {
+  background-color: var(--color-bg-warm);
+}
+
+.section-cool {
+  background-color: var(--color-bg-cool);
+}
+
+.section-dark {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark p,
+.section-dark span,
+.section-dark li {
+  color: var(--color-text-white);
+}
+
+.section-dark .section-subtitle {
+  color: var(--color-accent);
+}
+
+.section-padding {
+  padding: var(--section-py) 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: var(--section-py-sm) 0;
+  }
+}
+
+/* ========================
+   5. Section Headings
+   ======================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-desc {
+  font-size: 1rem;
+  color: #5a706d;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.section-dark .section-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ========================
+   6. Navbar
+   ======================== */
+.navbar-elsyifa {
+  background-color: var(--color-primary) !important;
+  padding: 0.75rem 0;
+  transition: all var(--transition-base);
+  z-index: 1050;
+}
+
+.navbar-elsyifa .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-white) !important;
+}
+
+.navbar-elsyifa .navbar-brand img {
+  height: 42px;
+  width: auto;
+}
+
+.navbar-elsyifa .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: color var(--transition-base);
+}
+
+.navbar-elsyifa .nav-link:hover,
+.navbar-elsyifa .nav-link.active {
+  color: var(--color-accent) !important;
+}
+
+.navbar-elsyifa .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+}
+
+.navbar-elsyifa .nav-link:hover::after,
+.navbar-elsyifa .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.navbar-elsyifa .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 0.6rem;
+}
+
+.navbar-elsyifa .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Top bar */
+.top-bar {
+  background-color: #052825;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.top-bar a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.top-bar a:hover {
+  color: var(--color-accent);
+}
+
+.top-bar i {
+  color: var(--color-accent);
+}
+
+/* ========================
+   7. Hero Section
+   ======================== */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: 85vh;
+}
+
+.hero-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(7, 51, 47, 0.85) 0%, rgba(7, 51, 47, 0.5) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero-content .hero-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: var(--color-white);
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .hero-swiper {
+    min-height: 70vh;
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ========================
+   8. Statistik / Infografis
+   ======================== */
+.stat-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), #f9c4a8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #5a706d;
+  margin-top: 0.25rem;
+}
+
+/* ========================
+   9. Sambutan Direktur
+   ======================== */
+.director-img-wrapper {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.director-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+  aspect-ratio: 3/4;
+}
+
+.director-img-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(7, 51, 47, 0.3), transparent);
+  border-radius: var(--radius-card);
+}
+
+.director-quote {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--color-text-dark);
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--color-accent);
+}
+
+.director-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.director-title {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* ========================
+   10. Sejarah
+   ======================== */
+.history-content {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.history-year {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  opacity: 0.3;
+}
+
+/* ========================
+   11. Visi & Misi
+   ======================== */
+.visi-misi-card {
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-card-light);
+  border: none;
+  height: 100%;
+  transition: box-shadow var(--transition-base);
+}
+
+.visi-misi-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.visi-misi-card .card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), #0a4a45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.visi-misi-card h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.misi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.misi-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.misi-list li::before {
+  content: '\F272';
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 0.8rem;
+}
+
+/* ========================
+   12. Cards — Global Styles
+   ======================== */
+.card-elsyifa {
+  background: var(--color-white);
+  border: none !important;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card-light);
+  overflow: hidden;
+  height: 100%;
+  transition: box-shadow var(--transition-base);
+}
+
+.section-dark .card-elsyifa {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-card-dark);
+}
+
+.card-elsyifa:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.card-elsyifa .card-img-top {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-elsyifa .card-body {
+  padding: 1.5rem;
+}
+
+.card-elsyifa .card-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-elsyifa .card-text {
+  font-size: 0.9rem;
+  color: #5a706d;
+  line-height: 1.6;
+}
+
+/* Doctor Card */
+.doctor-card {
+  text-align: center;
+}
+
+.doctor-card .card-img-top {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top;
+}
+
+.doctor-card .card-body {
+  padding: 1.25rem;
+}
+
+.doctor-card .doctor-specialty {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Poliklinik Card */
+.poli-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--color-white);
+  border: none !important;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card-light);
+  height: 100%;
+  transition: box-shadow var(--transition-base);
+}
+
+.poli-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.poli-card .poli-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--color-bg-cool);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  transition: all var(--transition-base);
+}
+
+.poli-card:hover .poli-icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.poli-card h5 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.poli-card p {
+  font-size: 0.85rem;
+  color: #5a706d;
+}
+
+/* Room card */
+.room-card .room-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ========================
+   13. Unit & Instalasi
+   ======================== */
+.unit-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-white);
+  border: none;
+  border-radius: var(--radius-soft);
+  box-shadow: var(--shadow-card-light);
+  transition: box-shadow var(--transition-base);
+  height: 100%;
+}
+
+.unit-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.unit-card .unit-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), #0a4a45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.unit-card h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.unit-card p {
+  font-size: 0.8rem;
+  color: #5a706d;
+  margin-bottom: 0;
+}
+
+/* ========================
+   14. Artikel & Berita
+   ======================== */
+.article-card .card-date {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.article-card .card-title a:hover {
+  color: var(--color-accent);
+}
+
+/* ========================
+   15. Galeri
+   ======================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-soft);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 51, 47, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay i {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Gallery Modal / Lightbox */
+.lightbox-modal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+.lightbox-modal .modal-body {
+  padding: 0;
+  text-align: center;
+}
+
+.lightbox-modal .modal-body img {
+  max-height: 85vh;
+  border-radius: var(--radius-soft);
+}
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  filter: invert(1);
+  z-index: 10;
+}
+
+/* ========================
+   16. Testimonial
+   ======================== */
+.testimonial-card {
+  background: var(--color-white);
+  border: none;
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  box-shadow: var(--shadow-card-light);
+  text-align: center;
+  height: 100%;
+}
+
+.testimonial-card .testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-accent);
+}
+
+.testimonial-card .testimonial-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: #3a4f4c;
+}
+
+.testimonial-card .testimonial-name {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+}
+
+.testimonial-card .testimonial-role {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+}
+
+.testimonial-stars {
+  color: #f7b731;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ========================
+   17. Partnership
+   ======================== */
+.partner-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  height: 100px;
+}
+
+.partner-logo-wrapper img {
+  max-height: 50px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: all var(--transition-base);
+}
+
+.partner-logo-wrapper img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* ========================
+   18. Kontak & Lokasi
+   ======================== */
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-card .contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(247, 165, 130, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.section-dark .contact-icon {
+  background: rgba(247, 165, 130, 0.2);
+}
+
+.contact-info-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.contact-info-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  opacity: 0.85;
+}
+
+.map-wrapper {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card-dark);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+/* ========================
+   19. Footer
+   ======================== */
+.footer-elsyifa {
+  background-color: var(--color-primary);
+  padding: 3.5rem 0 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-elsyifa h5 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.footer-elsyifa p,
+.footer-elsyifa li,
+.footer-elsyifa a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-elsyifa a:hover {
+  color: var(--color-accent);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links li::before {
+  content: '\F285';
+  font-family: 'bootstrap-icons';
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--color-accent);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem 0;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(247, 165, 130, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin: 0 0.25rem;
+  transition: all var(--transition-base);
+}
+
+.footer-social a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+/* ========================
+   20. Buttons
+   ======================== */
+
+/* Solid button for light backgrounds */
+.btn-elsyifa {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.75rem;
+  border-radius: var(--radius-btn);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.btn-elsyifa:hover {
+  background-color: #052825;
+  border-color: #052825;
+  color: var(--color-white);
+}
+
+/* Outline button for dark backgrounds */
+.btn-elsyifa-outline {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.75rem;
+  border-radius: var(--radius-btn);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.btn-elsyifa-outline:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* Floating button */
+.btn-float {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-base);
+}
+
+.btn-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Back to top */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+}
+
+.btn-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* WhatsApp floating */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #25d366;
+  color: var(--color-white);
+  z-index: 1040;
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  color: var(--color-white);
+}
+
+/* ========================
+   21. Swiper Custom Styles
+   ======================== */
+.swiper-section .swiper-slide {
+  height: auto;
+}
+
+.swiper-section .swiper-pagination-bullet {
+  background: var(--color-primary);
+  opacity: 0.3;
+}
+
+.swiper-section .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+  opacity: 1;
+}
+
+.swiper-section .swiper-button-next,
+.swiper-section .swiper-button-prev {
+  color: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  background: var(--color-white);
+  border-radius: 50%;
+  box-shadow: var(--shadow-card-light);
+}
+
+.swiper-section .swiper-button-next::after,
+.swiper-section .swiper-button-prev::after {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-dark .swiper-section .swiper-button-next,
+.section-dark .swiper-section .swiper-button-prev {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+
+.section-dark .swiper-section .swiper-pagination-bullet {
+  background: var(--color-white);
+}
+
+.section-dark .swiper-section .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+}
+
+/* ========================
+   22. Animation — Fade In on Scroll
+   ======================== */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================
+   23. Utilities
+   ======================== */
+.text-accent {
+  color: var(--color-accent) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--color-primary) !important;
+}
+
+.img-placeholder {
+  background: linear-gradient(135deg, #e8f0ef 0%, #d4e4e2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+/* ========================
+   24. Responsive Adjustments
+   ======================== */
+@media (max-width: 576px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .footer-elsyifa {
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center !important;
+  }
+
+  .contact-info-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-whatsapp {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+
+  .btn-back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* ========================
+   25. Preloader
+   ======================== */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(247, 165, 130, 0.2);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Counter animation helper */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
