@@ -17,7 +17,7 @@ Pemetaan terakhir: **29 September 2026**, berdasarkan file di workspace. Konten 
 | Backend dan penyimpanan | Belum ada backend, API aplikasi, database, autentikasi, atau CMS |
 | Build | Tanpa bundler/transpiler; generator Node opsional untuk memperbarui kartu dan halaman unit |
 | Dependency manager | npm; browser memuat file distribusi langsung dari `node_modules/` |
-| Pengujian | Belum ada test suite, konfigurasi lint, atau npm scripts |
+| Pengujian | Pemeriksaan aset gambar dan tes checker melalui Node.js; workflow GitHub Actions |
 
 ```mermaid
 flowchart TD
@@ -226,7 +226,7 @@ Prasyarat: Node.js dan npm untuk memasang dependency, serta server HTTP statis s
 
    Buka `http://localhost:8000/`.
 
-Tidak tersedia perintah `npm start`, `npm run dev`, `npm run build`, atau `npm test` karena `package.json` belum memiliki `scripts`. Setelah mengedit HTML/CSS/JS, muat ulang browser; tidak ada hot reload bawaan.
+Tidak tersedia perintah `npm start`, `npm run dev`, `npm run build`, atau `npm test`. Script pengujian aset tersedia melalui `npm run test:assets` dan perintah terkait di bagian validasi. Setelah mengedit HTML/CSS/JS, muat ulang browser; tidak ada hot reload bawaan.
 
 Untuk penyajian di hosting, pertahankan path relatif HTML, `assets/`, dan file distribusi vendor yang dirujuk di `node_modules/`, termasuk font Bootstrap Icons. Folder `node_modules/` tidak ikut Git sehingga perlu disiapkan melalui instalasi atau penyalinan aset vendor pada proses deployment. Belum ada pipeline deployment dalam repository.
 
@@ -275,7 +275,32 @@ Sebelum mengedit, periksa `git status --short` agar perubahan pengguna tetap ter
 
 ## 9. Validasi perubahan
 
-Belum ada pengujian otomatis yang disediakan proyek. Untuk perubahan fungsional, lakukan pemeriksaan sesuai bagian yang disentuh:
+### Pengujian URL aset gambar
+
+Workflow `.github/workflows/image-assets.yml` berjalan pada push, pull request, pemicu manual, dan setiap Senin pukul 01.00 UTC (08.00 WIB). Runner memakai Node.js 22, tanpa instalasi dependency tambahan. Tes checker dijalankan terlebih dahulu, kemudian pemeriksaan aset sebenarnya. Workflow menggunakan `contents: read` dan tidak membutuhkan secret.
+
+```powershell
+npm run test:assets-checker
+npm run test:assets
+npm run test:assets:local
+```
+
+Jika PowerShell memblokir `npm.ps1`, gunakan `npm.cmd` sebagai pengganti `npm`.
+
+`scripts/check-image-assets.cjs` memindai HTML, CSS, favicon, metadata gambar, `data-img` popup, `srcset` dengan descriptor lebar/density, manifest ikon, dan data unit. Folder dependency, test, dot-directory, serta laporan dilewati. Referensi kosong untuk popup dinamis dan data URI tidak diperiksa. Referensi gambar yang dibangun dinamis oleh JavaScript di luar markup/data unit tidak dipindai. URL duplikat diperiksa sekali, sementara varian query imgix tetap diperiksa secara terpisah.
+
+- File lokal: keberadaan, kapitalisasi path, dan file tidak kosong. Pemeriksaan ini tidak menguji konfigurasi server hosting atau mendekode isi gambar.
+- URL HTTP/HTTPS: request GET, mengikuti redirect, status sukses, dan `Content-Type: image/*`. Respons HTML berstatus 200 juga dianggap gagal. Body dibatalkan setelah header diterima agar tidak mengunduh seluruh gambar; integritas piksel bukan cakupan pemeriksaan.
+- Maksimal 6 request bersamaan, timeout 10 detik per request, dan maksimal 2 percobaan untuk masalah jaringan, HTTP 429, atau HTTP 5xx. Tidak ada pengulangan untuk 404/403.
+- Aset gagal menghasilkan exit code 1 sehingga CI gagal. Tidak adanya referensi gambar juga menghasilkan exit code 1. Mode lokal melewati seluruh URL eksternal secara eksplisit.
+
+Hasil disimpan dalam `reports/image-assets.json` dan `reports/image-assets.md`, termasuk URL/path, file sumber, status HTTP, dan penyebab kegagalan. Folder `reports/` diabaikan Git. Actions menampilkan ringkasan dan menyimpan artifact `image-assets-report` selama 14 hari, termasuk saat pemeriksaan gagal.
+
+`tests/image-assets.test.cjs` memakai server HTTP lokal untuk menguji ekstraksi imgix, deduplikasi, path relatif/absolut, kapitalisasi file, redirect, respons bukan gambar, 404/403, retry, dan timeout tanpa bergantung pada internet. Kegagalan jaringan lokal seperti `EACCES` bukan bukti gambar di CDN hilang; periksa ulang pada lingkungan yang memiliki akses jaringan atau melalui Actions.
+
+### Pemeriksaan tampilan
+
+Untuk perubahan fungsional, lakukan pemeriksaan sesuai bagian yang disentuh:
 
 1. Buka seluruh halaman melalui HTTP; periksa Console dan Network, khususnya file vendor serta gambar yang 404.
 2. Uji navbar desktop/mobile, penanda halaman aktif, tautan antarhalaman, dan anchor tujuan.

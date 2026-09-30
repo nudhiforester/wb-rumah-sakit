@@ -68,6 +68,7 @@ pids/
 # Coverage & Testing
 # ========================
 coverage/
+reports/
 .nyc_output/
 
 # ========================

@@ -1,0 +1,37 @@
+name: Check image assets
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: image-assets-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  image-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test image checker
+        run: npm run test:assets-checker
+      - name: Check local files and remote image URLs
+        run: npm run test:assets
+      - name: Upload image check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-assets-report
+          path: reports/image-assets.*
+          if-no-files-found: ignore
+          retention-days: 14

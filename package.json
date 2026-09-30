@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "test:assets": "node scripts/check-image-assets.cjs",
+    "test:assets:local": "node scripts/check-image-assets.cjs --local-only",
+    "test:assets-checker": "node --test tests/image-assets.test.cjs"
+  },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
