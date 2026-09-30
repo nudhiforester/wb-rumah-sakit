@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
 
-  <title>RSU El-Syifa Kuningan — Melayani Dengan Sepenuh Hati</title>
+  <title>RSU El-Syifa — Beranda</title>
 
   <!-- Favicon -->
   <link rel="icon" href="assets/img/Pavicon/favicon.ico" type="image/x-icon">
@@ -36,9 +36,12 @@
   <!-- ============================================
        PRELOADER
        ============================================ -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-spinner"></div>
+  <div class="preloader" id="preloader" hidden aria-hidden="true">
+    <div class="preloader-spinner">
+      <img class="preloader-logo" src="assets/img/Logo/logo.svg" alt="Logo RSU El-Syifa Kuningan" width="56" height="56" loading="eager">
+    </div>
   </div>
+  <script src="assets/js/preloader.js"></script>
 
   <!-- ============================================
        TOP BAR
@@ -77,7 +80,7 @@
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="assets/img/Logo/logo.png" alt="Logo RSU El-Syifa Kuningan" width="42" height="42" loading="eager">
-        <span class="d-none d-sm-inline">RSU El-Syifa</span>
+        <span class="navbar-brand-text">RSU El-Syifa<br>Kuningan</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
@@ -98,7 +101,10 @@
             <a class="nav-link" href="artikel.html">Artikel &amp; Berita</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hubungi-kami.html">Hubungi Kami</a>
+            <a class="nav-link" href="Testimonial.html">Testimonial</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="Galeri.html">Galeri</a>
           </li>
         </ul>
       </div>
@@ -114,38 +120,42 @@
 
         <!-- Slide 1 -->
         <div class="swiper-slide hero-slide"
-          style="background-image: url('assets/img/hero-1.jpg');">
+          style="background-image: url('https://6aa97c5b9422e77b387ff09b.imgix.net/elsyifa/fbca15d716c12f706fd5896f1fa224.png');">
           <div class="hero-content">
             <span class="hero-subtitle">Selamat Datang di</span>
             <h1>RSU El-Syifa Kuningan</h1>
-            <p>Melayani dengan sepenuh hati untuk kesehatan Anda dan keluarga. Tenaga medis profesional siap memberikan
+            <p class="hero-description">Melayani dengan sepenuh hati untuk kesehatan Anda dan keluarga. Tenaga medis profesional siap memberikan
               pelayanan terbaik.</p>
-            <a href="#layanan" class="btn btn-elsyifa-outline me-2">Layanan Kami</a>
-            <a href="hubungi-kami.html" class="btn btn-elsyifa-outline">Hubungi Kami</a>
           </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="swiper-slide hero-slide"
-          style="background-image: url('assets/img/hero-2.jpg');">
+          style="background-image: url('https://6aa97c5b9422e77b387ff09b.imgix.net/elsyifa/Gemini_Generated_Image_9yishl9yishl9yis.jpeg');">
           <div class="hero-content">
             <span class="hero-subtitle">Fasilitas Lengkap</span>
             <h1>Pelayanan Kesehatan Modern</h1>
-            <p>Didukung peralatan medis terkini dan ruang rawat yang nyaman untuk proses penyembuhan yang optimal.</p>
-            <a href="#ruang-rawat" class="btn btn-elsyifa-outline me-2">Ruang Rawat</a>
-            <a href="dokter.html" class="btn btn-elsyifa-outline">Tim Dokter</a>
+            <p class="hero-description">Didukung peralatan medis terkini dan ruang rawat yang nyaman untuk proses penyembuhan yang optimal.</p>
           </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="swiper-slide hero-slide"
-          style="background-image: url('assets/img/hero-3.jpg');">
+          style="background-image: url('https://6aa97c5b9422e77b387ff09b.imgix.net/Elsyifa/Gemini_Generated_Image_uv0wvguv0wvguv0w.jpeg');">
           <div class="hero-content">
             <span class="hero-subtitle">Komitmen Kami</span>
             <h1>Kesehatan Anda Prioritas Kami</h1>
-            <p>Memberikan layanan kesehatan yang berkualitas, terjangkau, dan berorientasi pada keselamatan pasien.</p>
-            <a href="#poliklinik" class="btn btn-elsyifa-outline me-2">Poliklinik</a>
-            <a href="#kontak" class="btn btn-elsyifa-outline">Lokasi Kami</a>
+            <p class="hero-description">Memberikan layanan kesehatan yang berkualitas, terjangkau, dan berorientasi pada keselamatan pasien.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide hero-slide"
+          style="background-image: url('https://6aa97c5b9422e77b387ff09b.imgix.net/elsyifa/Gemini_Generated_Image_ohumu4ohumu4ohum.jpeg');">
+          <div class="hero-content">
+            <span class="hero-subtitle">Pelayanan Maksimal</span>
+            <h1>Memberikan Pelayanan Maksimal</h1>
+            <p class="hero-description">Memberikan pelayanan maksimal dengan kualitas sumber daya terbaik yang kami miliki.</p>
           </div>
         </div>
 
@@ -167,7 +177,7 @@
               <i class="bi bi-person-badge"></i>
             </div>
             <span class="stat-number" data-target="50">0</span>
-            <span class="stat-label">Dokter Profesional</span>
+            <span class="stat-label">Tenaga Dokter</span>
           </div>
         </div>
         <div class="col-6 col-md-3 fade-in-up">
@@ -176,7 +186,7 @@
               <i class="bi bi-building"></i>
             </div>
             <span class="stat-number" data-target="200">0</span>
-            <span class="stat-label">Ruang Perawatan</span>
+            <span class="stat-label">Ruang Rawat</span>
           </div>
         </div>
         <div class="col-6 col-md-3 fade-in-up">
@@ -185,7 +195,7 @@
               <i class="bi bi-heart-pulse"></i>
             </div>
             <span class="stat-number" data-target="15000">0</span>
-            <span class="stat-label">Pasien Rawat Inap/th</span>
+            <span class="stat-label">Pasien Rawat Inap</span>
           </div>
         </div>
         <div class="col-6 col-md-3 fade-in-up">
@@ -194,7 +204,7 @@
               <i class="bi bi-people"></i>
             </div>
             <span class="stat-number" data-target="50000">0</span>
-            <span class="stat-label">Pasien Rawat Jalan/th</span>
+            <span class="stat-label">Pasien Rawat Jalan</span>
           </div>
         </div>
       </div>
@@ -209,20 +219,19 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-5 fade-in-up">
           <div class="director-img-wrapper">
-            <img src="assets/img/Direktur/direktur.jpg"
+            <img src="assets/img/Direktur/DirekturRs.png"
               alt="dr. Guruh Ardhianto Kurniawan, MM., CP.NLP — Direktur RSU El-Syifa Kuningan" loading="lazy"
               class="img-fluid">
           </div>
         </div>
         <div class="col-lg-7 fade-in-up">
           <span class="section-subtitle">Sambutan Direktur</span>
-          <h2 class="section-title text-start mb-4">Melayani Dengan Sepenuh Hati</h2>
+          <h2 class="section-title text-start mb-4">RSU El-Syifa Kuningan</h2>
           <p class="director-quote">
-            "Assalamualaikum Warahmatullahi Wabarakatuh. Puji syukur kami panjatkan kehadirat Allah SWT atas segala
-            limpahan rahmat dan karunia-Nya. RSU El-Syifa Kuningan berkomitmen untuk terus meningkatkan mutu pelayanan
-            kesehatan yang berorientasi pada keselamatan pasien. Dengan dukungan tenaga medis profesional dan fasilitas
-            modern, kami siap melayani masyarakat Kuningan dan sekitarnya dengan sepenuh hati. Semoga Allah SWT
-            senantiasa memberikan kesehatan dan keberkahan kepada kita semua."
+            "Assalamualaikum Warahmatullahi Wabarakatuh. Salam sejahtera bagi kita semua, puji syukur kita panjatkan ke hadirat Allah SWT atas segala rahmat dan karunia-Nya, sehingga kita diberikan kesehatan hingga saat ini. 
+            Kami mengucapkan terima kasih atas kepercayaan yang diberikan kepada kami sebagai penyedia layanan kesehatan bagi masyarakat. Kami terus berkomitmen untuk memberikan pelayanan yang terbaik, berorientasi pada kebutuhan pasien, dengan tetap menjunjung tinggi nilai-nilai profesionalisme dan kepedulian. 
+            RSU El-Syifa tidak hanya bertujuan untuk menjadi rumah sakit yang unggul, tetapi juga menjadi mitra terpercaya dalam menjaga kesehatan masyarakat. Dengan semangat inovasi dan kolaborasi, kami siap melangkah bersama untuk memberikan pelayanan kesehatan yang berkualitas, humanis, dan mudah diakses.
+            Terima kasih atas dukungan dan kepercayaan yang telah diberikan kepada kami. Semoga RSU El-Syifa selalu dapat memenuhi harapan masyarakat sebagai rumah sakit yang amanah dan berdaya saing."
           </p>
           <div class="mt-4">
             <p class="director-name mb-0">dr. Guruh Ardhianto Kurniawan, MM., CP.NLP</p>
@@ -255,9 +264,30 @@
           </div>
         </div>
         <div class="col-lg-5 fade-in-up text-center">
-          <div class="history-year">Est.</div>
-          <img src="assets/img/Logo/logo.png" alt="Logo RSU El-Syifa Kuningan" loading="lazy"
-            class="img-fluid" style="max-width: 200px; opacity: 0.6;">
+          <div class="history-album" role="group" aria-label="Album perjalanan RSU El-Syifa Kuningan">
+            <img class="history-album-logo" src="assets/img/Logo/logo.png" alt="RSU El-Syifa Kuningan" loading="lazy">
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/sejarah-1.jpeg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 1" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/sejarah-1.jpeg" alt="Dokumentasi sejarah RSU El-Syifa 1" loading="lazy" width="578" height="329">
+            </button>
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/sejarah-2.jpeg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 2" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/sejarah-2.jpeg" alt="Dokumentasi sejarah RSU El-Syifa 2" loading="lazy" width="548" height="364">
+            </button>
+            <button type="button" class="history-photo history-photo-portrait" data-img="assets/img/Sejarah/Sejarah-3.JPG" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Pelepasan balon di halaman RSU El-Syifa" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/Sejarah-3.JPG" alt="Pelepasan balon di halaman RSU El-Syifa" loading="lazy" width="399" height="600">
+            </button>
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/Sejarah-4.JPG" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 4" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/Sejarah-4.JPG" alt="Dokumentasi sejarah RSU El-Syifa 4" loading="lazy" width="800" height="532">
+            </button>
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/sejarah-5.jpeg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 5" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/sejarah-5.jpeg" alt="Dokumentasi sejarah RSU El-Syifa 5" loading="lazy" width="548" height="364">
+            </button>
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/sejarah-6.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 6" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/sejarah-6.jpg" alt="Dokumentasi sejarah RSU El-Syifa 6" loading="lazy" width="448" height="235">
+            </button>
+            <button type="button" class="history-photo" data-img="assets/img/Sejarah/sejarah-7.jpeg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto: Dokumentasi sejarah RSU El-Syifa 7" aria-haspopup="dialog">
+              <img src="assets/img/Sejarah/sejarah-7.jpeg" alt="Dokumentasi sejarah RSU El-Syifa 7" loading="lazy" width="1280" height="853">
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -281,8 +311,10 @@
               <i class="bi bi-eye"></i>
             </div>
             <h4>Visi</h4>
-            <p>Menjadi Rumah Sakit Umum yang unggul, terpercaya, dan menjadi pilihan utama masyarakat dalam memberikan
-              pelayanan kesehatan yang berkualitas, aman, dan berorientasi pada kepuasan pasien.</p>
+            <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas sesuai dengan motto Rumah Sakit Yaitu Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah.</p>
+            <p>Pelayanan kesehatan yang berkualitas adalah hak dasar bagi setiap individu. Namun, masih banyak masyarakat yang mengalami kesulitan dalam memperoleh pelayanan kesehatan yang sesuai dengan kebutuhan mereka. Hal ini bisa disebabkan oleh berbagai faktor, seperti kurangnya fasilitas kesehatan di daerah mereka, biaya yang tinggi, atau kurangnya informasi mengenai pelayanan kesehatan yang tersedia.</p>
+            <p>Sebagai tenaga kesehatan, kita memiliki tanggung jawab untuk melayani masyarakat dengan memberikan pelayanan kesehatan yang berkualitas. Hal ini dapat dilakukan dengan berbagai cara, seperti memberikan informasi mengenai kesehatan kepada masyarakat, memastikan ketersediaan fasilitas kesehatan yang memadai, serta memberikan pelayanan kesehatan yang efektif dan aman.</p>
+            <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas juga dapat dilakukan melalui pendekatan partisipatif. Hal ini dapat dilakukan dengan mengajak masyarakat untuk aktif berpartisipasi dalam proses perencanaan, pelaksanaan, dan evaluasi program kesehatan. Dengan melibatkan masyarakat dalam proses ini, diharapkan dapat tercipta program kesehatan yang sesuai dengan kebutuhan masyarakat.</p>
           </div>
         </div>
         <div class="col-lg-6 fade-in-up">
@@ -292,11 +324,13 @@
             </div>
             <h4>Misi</h4>
             <ul class="misi-list">
-              <li>Memberikan pelayanan kesehatan yang bermutu tinggi dan berorientasi pada keselamatan pasien.</li>
-              <li>Menyediakan sumber daya manusia yang kompeten, profesional, dan berintegritas.</li>
-              <li>Mengembangkan fasilitas dan teknologi kesehatan yang modern.</li>
-              <li>Menjalin kemitraan strategis dengan berbagai instansi untuk peningkatan mutu.</li>
-              <li>Menciptakan lingkungan kerja yang kondusif dan beretika.</li>
+              <li>Memberikan pelayanan kesehatan yang berkualitas sesuai dengan syariat islam.</li>
+              <li>Pelayanan kesehatan adalah upaya untuk memelihara dan meningkatkan kesehatan individu atau masyarakat. Pelayanan kesehatan dapat dilakukan oleh berbagai jenis tenaga kesehatan, seperti dokter, perawat, bidan, farmasis, dan lain-lain.</li>
+              <li>Pelayanan kesehatan yang baik harus memenuhi standar yang ditetapkan, seperti terjangkau, aman, efektif, efisien, dan berkeadilan. Selain itu, pelayanan kesehatan juga harus disesuaikan dengan kebutuhan individu atau masyarakat yang dilayani.</li>
+              <li>Salah satu faktor penting dalam pelayanan kesehatan adalah komunikasi yang baik antara tenaga kesehatan dan pasien. Komunikasi yang baik akan membantu pasien memahami kondisinya dan memperoleh pengobatan yang tepat. Selain itu, pelayanan kesehatan juga harus memberikan pendidikan kesehatan kepada pasien agar mereka dapat memelihara kesehatan mereka sendiri dengan baik.</li>
+              <li>Pelayanan kesehatan juga harus didukung oleh teknologi yang canggih, seperti sistem informasi kesehatan dan alat-alat medis yang modern. Hal ini akan membantu tenaga kesehatan dalam memberikan pelayanan yang lebih baik dan efisien.</li>
+              <li>Di Indonesia, pelayanan kesehatan telah mengalami banyak kemajuan dalam beberapa tahun terakhir. Pemerintah telah melakukan berbagai upaya untuk meningkatkan pelayanan kesehatan, seperti memberikan fasilitas kesehatan yang lebih baik, meningkatkan jumlah tenaga kesehatan, dan memberikan program-program kesehatan yang efektif.</li>
+              <li>Namun, masih banyak tantangan yang harus dihadapi dalam pelayanan kesehatan, seperti kurangnya aksesibilitas bagi masyarakat yang tinggal di daerah terpencil atau kurang mampu secara finansial. Oleh karena itu, pemerintah dan masyarakat perlu bekerja sama untuk terus meningkatkan pelayanan kesehatan agar dapat mencapai tujuan bersama dalam memelihara dan meningkatkan kesehatan masyarakat.</li>
             </ul>
           </div>
         </div>
@@ -311,111 +345,158 @@
     <div class="container">
       <div class="section-header fade-in-up">
         <span class="section-subtitle">Layanan Kami</span>
-        <h2 class="section-title">Poliklinik Spesialis</h2>
-        <p class="section-desc">Didukung oleh dokter spesialis yang berpengalaman di bidangnya untuk memberikan
-          penanganan yang tepat dan efektif.</p>
+        <h2 class="section-title">Poliklinik &amp; Layanan Penunjang</h2>
+        <p class="section-desc">Kenali poliklinik dan layanan penunjang RSU El-Syifa Kuningan.</p>
       </div>
       <div class="swiper swiper-section poliklinik-swiper fade-in-up">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-heart-pulse"></i></div>
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/Umum.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Umum</h5>
+              <p>Konsultasi kesehatan umum dan pemeriksaan awal untuk keluhan Anda.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/penyakit-dalam.png" alt="" loading="lazy" width="80" height="80">
+              </div>
               <h5>Penyakit Dalam</h5>
-              <p>Penanganan penyakit organ dalam dengan pendekatan komprehensif.</p>
+              <p>Konsultasi dan pemeriksaan untuk keluhan kesehatan organ dalam.</p>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-lungs"></i></div>
-              <h5>Paru-Paru</h5>
-              <p>Diagnosis dan pengobatan gangguan sistem pernapasan.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-person-heart"></i></div>
-              <h5>Jantung</h5>
-              <p>Layanan kardiovaskular dari pemeriksaan hingga penanganan lanjut.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-scissors"></i></div>
-              <h5>Bedah Umum</h5>
-              <p>Tindakan bedah dengan standar keselamatan pasien tertinggi.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-emoji-smile"></i></div>
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/anak.png" alt="" loading="lazy" width="80" height="80">
+              </div>
               <h5>Anak</h5>
-              <p>Pelayanan kesehatan anak dari bayi hingga remaja.</p>
+              <p>Pemeriksaan kesehatan serta pemantauan tumbuh kembang anak.</p>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-gender-female"></i></div>
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/kandungan.png" alt="" loading="lazy" width="80" height="80">
+              </div>
               <h5>Kebidanan &amp; Kandungan</h5>
-              <p>Pendampingan kehamilan, persalinan, dan kesehatan reproduksi.</p>
+              <p>Konsultasi kehamilan dan kesehatan reproduksi perempuan.</p>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-eye"></i></div>
-              <h5>Mata</h5>
-              <p>Pemeriksaan dan penanganan gangguan penglihatan.</p>
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/bedah.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Bedah</h5>
+              <p>Konsultasi dan evaluasi kondisi yang memerlukan penanganan bedah.</p>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-ear"></i></div>
-              <h5>THT</h5>
-              <p>Layanan telinga, hidung, dan tenggorokan secara komprehensif.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-bandaid"></i></div>
-              <h5>Kulit &amp; Kelamin</h5>
-              <p>Diagnosis dan terapi penyakit kulit serta kelamin.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-activity"></i></div>
-              <h5>Saraf</h5>
-              <p>Penanganan gangguan sistem saraf dengan teknologi terkini.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-bone"></i></div>
-              <h5>Orthopedi</h5>
-              <p>Layanan tulang, sendi, dan sistem muskuloskeletal.</p>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="poli-card">
-              <div class="poli-icon"><i class="bi bi-tooth"></i></div>
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/gigi.png" alt="" loading="lazy" width="80" height="80">
+              </div>
               <h5>Gigi &amp; Mulut</h5>
-              <p>Perawatan gigi lengkap dari preventif hingga restoratif.</p>
+              <p>Pemeriksaan dan perawatan untuk menjaga kesehatan gigi dan mulut.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/kulit-kelamin.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Kulit &amp; Kelamin</h5>
+              <p>Konsultasi dan pemeriksaan keluhan pada kulit dan kelamin.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/syaraf.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Saraf</h5>
+              <p>Konsultasi dan pemeriksaan untuk keluhan pada sistem saraf.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/rehabilitasi.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Rehabilitasi</h5>
+              <p>Pendampingan pemulihan fungsi tubuh untuk mendukung aktivitas sehari-hari.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/perawatan-luka.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Perawatan Luka</h5>
+              <p>Pemeriksaan dan perawatan luka sesuai kondisi serta kebutuhan pasien.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/dots.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>DOTS</h5>
+              <p>Pendampingan pengobatan dan pemantauan pasien tuberkulosis.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/PDP.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>PDP</h5>
+              <p>Konsultasi dan pendampingan perawatan sesuai kebutuhan pasien layanan PDP.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/laboratorium.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Laboratorium</h5>
+              <p>Pemeriksaan sampel untuk membantu dokter menilai kondisi kesehatan.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="poli-card" tabindex="0">
+              <div class="poli-icon">
+                <img src="assets/img/Poliklinik/radiologi.png" alt="" loading="lazy" width="80" height="80">
+              </div>
+              <h5>Radiologi</h5>
+              <p>Pemeriksaan pencitraan untuk membantu proses diagnosis dokter.</p>
             </div>
           </div>
 
         </div>
-        <div class="swiper-pagination mt-4"></div>
+      </div>
+      <div class="unit-pagination-controls" aria-label="Navigasi Poliklinik">
+        <button type="button" class="unit-prev" aria-label="Poliklinik sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Poliklinik berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
     </div>
   </section>
@@ -436,74 +517,82 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-1.jpg" class="card-img-top" alt="dr. Ahmad Fauzi, Sp.PD"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/5a8879f36c57ecf3145df6d7ec0a89.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Erika Siti Azhari" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/5a8879f36c57ecf3145df6d7ec0a89.png" class="card-img-top" alt="dr. Erika Siti Azhari"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Ahmad Fauzi, Sp.PD</h5>
-                <span class="doctor-specialty">Spesialis Penyakit Dalam</span>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Erika Siti Azhari">dr. Erika Siti Azhari</h5>
+                <span class="doctor-specialty">Dokter Umum</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Erika Siti Azhari" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Erika Siti Azhari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-2.jpg" class="card-img-top" alt="dr. Siti Nurhaliza, Sp.OG"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dde34e37e2440c4d667e2512b8a8dd.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Raihana Haifa Sopa" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dde34e37e2440c4d667e2512b8a8dd.png" class="card-img-top" alt="dr. Raihana Haifa Sopa"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Siti Nurhaliza, Sp.OG</h5>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Raihana Haifa Sopa">dr. Raihana Haifa Sopa</h5>
                 <span class="doctor-specialty">Spesialis Kebidanan</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Raihana Haifa Sopa" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Raihana Haifa Sopa"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-3.jpg" class="card-img-top" alt="dr. Budi Santoso, Sp.A"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/776a1b56f8a1659fd811d52c97c11f11.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/776a1b56f8a1659fd811d52c97c11f11.jpg" class="card-img-top" alt="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Budi Santoso, Sp.A</h5>
-                <span class="doctor-specialty">Spesialis Anak</span>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua">dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua</h5>
+                <span class="doctor-specialty">Spesialis Patologi Klinis</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-4.jpg" class="card-img-top" alt="dr. Rina Kartika, Sp.M"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dc9aa006296fabb5ae36224da6272cd5.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Syamsyiatul Marifah" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dc9aa006296fabb5ae36224da6272cd5.jpg" class="card-img-top" alt="dr. Syamsyiatul Marifah"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Rina Kartika, Sp.M</h5>
-                <span class="doctor-specialty">Spesialis Mata</span>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Syamsyiatul Marifah">dr. Syamsyiatul Marifah</h5>
+                <span class="doctor-specialty">Dokter Umum</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Syamsyiatul Marifah" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Syamsyiatul Marifah"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-5.jpg" class="card-img-top" alt="dr. Hendra Wijaya, Sp.B"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/a4de0c19a5dcd2e667a4b47ed633e2.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Nadya Pitaloka Purbosari" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/a4de0c19a5dcd2e667a4b47ed633e2.png" class="card-img-top" alt="dr. Nadya Pitaloka Purbosari"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Hendra Wijaya, Sp.B</h5>
-                <span class="doctor-specialty">Spesialis Bedah</span>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Nadya Pitaloka Purbosari">dr. Nadya Pitaloka Purbosari</h5>
+                <span class="doctor-specialty">Dokter Umum</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Nadya Pitaloka Purbosari" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Nadya Pitaloka Purbosari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-              <img src="assets/img/Dokter/dokter-6.jpg" class="card-img-top" alt="dr. Dewi Lestari, Sp.THT"
-                loading="lazy">
+              <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/9024e9c5477b4197ccfb1aee459632.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Herlina" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/9024e9c5477b4197ccfb1aee459632.png" class="card-img-top" alt="dr. Herlina"
+                loading="lazy"></button>
               <div class="card-body">
-                <h5 class="card-title">dr. Dewi Lestari, Sp.THT</h5>
-                <span class="doctor-specialty">Spesialis THT</span>
+                <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Herlina">dr. Herlina</h5>
+                <span class="doctor-specialty">Dokter Umum</span>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Herlina" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Herlina"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination mt-4"></div>
+      </div>
+      <div class="unit-pagination-controls" aria-label="Navigasi Dokter">
+        <button type="button" class="unit-prev" aria-label="Dokter sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Dokter berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
       <div class="text-center mt-4 fade-in-up">
         <a href="dokter.html" class="btn btn-elsyifa">Lihat Semua Dokter <i class="bi bi-arrow-right ms-1"></i></a>
@@ -527,7 +616,7 @@
           <div class="swiper-slide">
             <div class="card-elsyifa room-card position-relative">
               <span class="room-badge">Premium</span>
-              <img src="assets/img/ruang-vip.jpg" class="card-img-top" alt="Ruang VIP RSU El-Syifa" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Rawat/d838fdb019e8f084dda82ce04a523a0a.jpg" class="card-img-top" alt="Ruang VIP RSU El-Syifa" loading="lazy">
               <div class="card-body">
                 <h5 class="card-title">Ruang VIP</h5>
                 <p class="card-text">Ruang perawatan premium dengan fasilitas lengkap, AC, TV, kamar mandi dalam,
@@ -538,7 +627,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa room-card">
-              <img src="assets/img/ruang-kelas1.jpg" class="card-img-top" alt="Ruang Kelas 1 RSU El-Syifa"
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Rawat/b657854d4cc37badaf16df926a414405.jpg" class="card-img-top" alt="Ruang Kelas 1 RSU El-Syifa"
                 loading="lazy">
               <div class="card-body">
                 <h5 class="card-title">Kelas 1</h5>
@@ -550,7 +639,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa room-card">
-              <img src="assets/img/ruang-kelas2.jpg" class="card-img-top" alt="Ruang Kelas 2 RSU El-Syifa"
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Rawat/0ed143333fcfea6c13d6a680cb61c969.jpg" class="card-img-top" alt="Ruang Kelas 2 RSU El-Syifa"
                 loading="lazy">
               <div class="card-body">
                 <h5 class="card-title">Kelas 2</h5>
@@ -562,7 +651,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa room-card">
-              <img src="assets/img/ruang-kelas3.jpg" class="card-img-top" alt="Ruang Kelas 3 RSU El-Syifa"
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Rawat/b0e87e95940858ca5d5bbf309f7465a0.jpg" class="card-img-top" alt="Ruang Kelas 3 RSU El-Syifa"
                 loading="lazy">
               <div class="card-body">
                 <h5 class="card-title">Kelas 3</h5>
@@ -575,7 +664,7 @@
           <div class="swiper-slide">
             <div class="card-elsyifa room-card position-relative">
               <span class="room-badge">24 Jam</span>
-              <img src="assets/img/ruang-icu.jpg" class="card-img-top" alt="Ruang ICU RSU El-Syifa" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Rawat/ce93ec281ce0f64124633354a3cbc6b4.jpg" class="card-img-top" alt="Ruang ICU RSU El-Syifa" loading="lazy">
               <div class="card-body">
                 <h5 class="card-title">ICU</h5>
                 <p class="card-text">Unit perawatan intensif 24 jam dengan peralatan monitoring canggih dan tenaga medis
@@ -585,9 +674,11 @@
           </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination mt-4"></div>
+      </div>
+      <div class="unit-pagination-controls" aria-label="Navigasi Ruang rawat">
+        <button type="button" class="unit-prev" aria-label="Ruang rawat sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Ruang rawat berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
       <div class="text-center mt-4 fade-in-up">
         <a href="ruang-rawat.html" class="btn btn-elsyifa">Lihat Semua Ruangan <i
@@ -601,104 +692,28 @@
        ============================================ -->
   <section class="section-padding section-cool" id="unit-instalasi">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <span class="section-subtitle">Penunjang Medis</span>
-        <h2 class="section-title">Unit &amp; Instalasi</h2>
-        <p class="section-desc">Fasilitas penunjang medis lengkap untuk mendukung proses diagnosis dan perawatan pasien.
-        </p>
-      </div>
-      <div class="row g-3">
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-hospital"></i></div>
-            <div>
-              <h6>Instalasi Gawat Darurat</h6>
-              <p>Layanan IGD 24 jam untuk penanganan darurat.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-droplet"></i></div>
-            <div>
-              <h6>Laboratorium</h6>
-              <p>Pemeriksaan darah, urine, dan diagnostik lainnya.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-radioactive"></i></div>
-            <div>
-              <h6>Radiologi</h6>
-              <p>Rontgen, USG, dan pencitraan medis lainnya.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-capsule"></i></div>
-            <div>
-              <h6>Farmasi</h6>
-              <p>Apotek rumah sakit dengan obat-obatan lengkap.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-egg-fried"></i></div>
-            <div>
-              <h6>Instalasi Gizi</h6>
-              <p>Pengelolaan nutrisi dan diet pasien rawat inap.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-clipboard2-pulse"></i></div>
-            <div>
-              <h6>Rehabilitasi Medik</h6>
-              <p>Fisioterapi dan pemulihan fungsi tubuh pasien.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-truck"></i></div>
-            <div>
-              <h6>Ambulance</h6>
-              <p>Layanan ambulance 24 jam untuk evakuasi pasien.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-file-earmark-medical"></i></div>
-            <div>
-              <h6>Rekam Medis</h6>
-              <p>Pengelolaan data medis pasien secara terintegrasi.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="unit-card">
-            <div class="unit-icon"><i class="bi bi-house-heart"></i></div>
-            <div>
-              <h6>Hemodialisa</h6>
-              <p>Unit cuci darah dengan peralatan modern.</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="section-header fade-in-up"><span class="section-subtitle">Unit &amp; Instalasi</span><h2 class="section-title">Penunjang Medis &amp; Non Medis</h2><p class="section-desc">Kenali unit pelayanan dan penunjang operasional RSU El-Syifa Kuningan. Pilih unit untuk melihat penjelasan, personel, dan dokumentasinya.</p></div>
+      <div class="swiper unit-swiper" aria-label="Daftar unit dan instalasi"><div class="swiper-wrapper unit-page-grid">
+        <a class="unit-card" href="unit/instalasi-gawat-darurat.html"><span class="unit-icon"><img src="assets/img/Unit/instalasi-gawat-darurat.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Instalasi Gawat Darurat</h3><span class="unit-summary">Pelayanan awal untuk kondisi gawat darurat.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/ambulance.html"><span class="unit-icon"><img src="assets/img/Unit/ambulance.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Ambulance</h3><span class="unit-summary">Dukungan transportasi dan pemindahan pasien.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/farmasi.html"><span class="unit-icon"><img src="assets/img/Unit/farmasi.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Farmasi</h3><span class="unit-summary">Pengelolaan obat dan pelayanan kefarmasian.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/gizi.html"><span class="unit-icon"><img src="assets/img/Unit/gizi.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Gizi</h3><span class="unit-summary">Dukungan pelayanan makanan dan kebutuhan gizi pasien.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/hemodialisa.html"><span class="unit-icon"><img src="assets/img/Unit/hemodialisa.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Hemodialisa</h3><span class="unit-summary">Dukungan pelayanan hemodialisa bagi pasien.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/laboratorium.html"><span class="unit-icon"><img src="assets/img/Unit/laboratorium.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Laboratorium</h3><span class="unit-summary">Pemeriksaan sampel untuk menunjang diagnosis.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/radiologi.html"><span class="unit-icon"><img src="assets/img/Unit/radiologi.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Radiologi</h3><span class="unit-summary">Pemeriksaan pencitraan sebagai penunjang medis.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/rehabilitasi-medis.html"><span class="unit-icon"><img src="assets/img/Unit/rehabilitasi-medis.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Medis</span><h3>Rehabilitasi Medis</h3><span class="unit-summary">Pendampingan pemulihan fungsi dan aktivitas pasien.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/rekam-medis.html"><span class="unit-icon"><img src="assets/img/Unit/rekam-medis.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>Rekam Medis</h3><span class="unit-summary">Pengelolaan dokumentasi pelayanan pasien.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/ipsrs.html"><span class="unit-icon"><img src="assets/img/Unit/ipsrs.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>IPSRS</h3><span class="unit-summary">Pemeliharaan sarana dan prasarana rumah sakit.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/kesling.html"><span class="unit-icon"><img src="assets/img/Unit/Kesling.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>Kesling</h3><span class="unit-summary">Dukungan kesehatan lingkungan rumah sakit.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/sirs.html"><span class="unit-icon"><img src="assets/img/Unit/sirs.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>SIRS</h3><span class="unit-summary">Dukungan sistem informasi operasional rumah sakit.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/administrasi-keuangan.html"><span class="unit-icon"><img src="assets/img/Unit/administrasi-keuangan.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>Administrasi &amp; Keuangan</h3><span class="unit-summary">Pengelolaan administrasi dan informasi pembayaran.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+        <a class="unit-card" href="unit/kepegawaian.html"><span class="unit-icon"><img src="assets/img/Unit/kepegawaian.png" alt="" width="48" height="48" loading="lazy"></span><div class="unit-card-content"><span class="unit-category">Non Medis</span><h3>Kepegawaian</h3><span class="unit-summary">Dukungan administrasi dan pengelolaan pegawai.</span><span class="unit-detail-link">Lihat detail <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div></a>
+      </div></div>
+      <div class="unit-pagination-controls" hidden>
+        <button type="button" class="unit-prev" aria-label="Halaman unit sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Halaman unit berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        <span class="unit-page-status" aria-live="polite" aria-atomic="true"></span>
       </div>
     </div>
   </section>
@@ -718,7 +733,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-              <img src="assets/img/Artikel/artikel-1.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/5e7fd3a1878d3dfc736bf02657989f51.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
               <div class="card-body">
                 <span class="card-date">20 September 2026</span>
                 <h5 class="card-title mt-2"><a href="artikel.html">Tips Menjaga Kesehatan Jantung di Usia Muda</a></h5>
@@ -730,7 +745,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-              <img src="assets/img/Artikel/artikel-2.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/ee82309347da2e13c5092b4de12706eb.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
               <div class="card-body">
                 <span class="card-date">15 September 2026</span>
                 <h5 class="card-title mt-2"><a href="artikel.html">Pentingnya Imunisasi Lengkap untuk Anak</a></h5>
@@ -742,7 +757,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-              <img src="assets/img/Artikel/artikel-3.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
               <div class="card-body">
                 <span class="card-date">10 September 2026</span>
                 <h5 class="card-title mt-2"><a href="artikel.html">RSU El-Syifa Gelar Bakti Sosial Kesehatan</a></h5>
@@ -754,7 +769,7 @@
 
           <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-              <img src="assets/img/Artikel/artikel-4.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/6e1b6283f7bba9d47fed76ce8252662a.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
               <div class="card-body">
                 <span class="card-date">5 September 2026</span>
                 <h5 class="card-title mt-2"><a href="artikel.html">Mengenal Gejala Diabetes dan Cara Pencegahannya</a>
@@ -766,7 +781,11 @@
           </div>
 
         </div>
-        <div class="swiper-pagination mt-4"></div>
+      </div>
+      <div class="unit-pagination-controls" aria-label="Navigasi Artikel">
+        <button type="button" class="unit-prev" aria-label="Artikel sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Artikel berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
       <div class="text-center mt-4 fade-in-up">
         <a href="artikel.html" class="btn btn-elsyifa">Lihat Semua Artikel <i class="bi bi-arrow-right ms-1"></i></a>
@@ -784,56 +803,56 @@
         <h2 class="section-title">Galeri RSU El-Syifa</h2>
         <p class="section-desc">Dokumentasi fasilitas, kegiatan, dan suasana RSU El-Syifa Kuningan.</p>
       </div>
-      <div class="gallery-grid fade-in-up">
+      <div class="swiper gallery-swiper" aria-label="Album galeri rumah sakit">
+        <div class="swiper-wrapper gallery-grid">
 
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-1.jpg">
-          <img src="assets/img/galeri-1.jpg" alt="Galeri RSU El-Syifa — Lobi Rumah Sakit" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Lobi Rumah Sakit" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Lobi Rumah Sakit" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Ruang Tunggu" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Ruang Tunggu" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Poliklinik" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Poliklinik" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Taman RS" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Taman RS" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Farmasi" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Farmasi" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Laboratorium" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Laboratorium" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — IGD" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — IGD" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
+        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Kegiatan Sosial" aria-haspopup="dialog">
+          <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Kegiatan Sosial" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+
         </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-2.jpg">
-          <img src="assets/img/galeri-2.jpg" alt="Galeri RSU El-Syifa — Ruang Tunggu" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-3.jpg">
-          <img src="assets/img/galeri-3.jpg" alt="Galeri RSU El-Syifa — Poliklinik" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-4.jpg">
-          <img src="assets/img/galeri-4.jpg" alt="Galeri RSU El-Syifa — Taman RS" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-5.jpg">
-          <img src="assets/img/galeri-5.jpg" alt="Galeri RSU El-Syifa — Farmasi" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-6.jpg">
-          <img src="assets/img/galeri-6.jpg" alt="Galeri RSU El-Syifa — Laboratorium" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-7.jpg">
-          <img src="assets/img/galeri-7.jpg" alt="Galeri RSU El-Syifa — IGD" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-          data-img="assets/img/galeri-8.jpg">
-          <img src="assets/img/galeri-8.jpg" alt="Galeri RSU El-Syifa — Kegiatan Sosial" loading="lazy">
-          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
-        </div>
-
+      </div>
+      <div class="unit-pagination-controls" hidden aria-label="Navigasi galeri">
+        <button type="button" class="unit-prev" aria-label="Halaman galeri sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Halaman galeri berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        <span class="unit-page-status" aria-live="polite" aria-atomic="true"></span>
       </div>
     </div>
   </section>
@@ -842,9 +861,13 @@
   <div class="modal fade lightbox-modal" id="lightboxModal" tabindex="-1" aria-label="Lightbox Galeri" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
         <div class="modal-body">
-          <img src="" alt="Galeri RSU El-Syifa" id="lightboxImage" class="img-fluid">
+          <div class="lightbox-frame">
+            <img src="" alt="Galeri RSU El-Syifa" id="lightboxImage" class="img-fluid">
+            <button type="button" class="lightbox-close" data-bs-dismiss="modal" aria-label="Tutup foto">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -856,82 +879,108 @@
   <section class="section-padding section-warm" id="testimonial">
     <div class="container">
       <div class="section-header fade-in-up">
-        <span class="section-subtitle">Apa Kata Mereka</span>
+        <span class="section-subtitle">Cerita Pasien</span>
         <h2 class="section-title">Testimonial Pasien</h2>
-        <p class="section-desc">Pengalaman para pasien yang telah merasakan pelayanan di RSU El-Syifa Kuningan.</p>
+        <p class="section-desc">Contoh testimoni untuk ilustrasi tampilan. Nama, foto, dan cerita berikut merupakan konten dummy, bukan ulasan pasien asli.</p>
       </div>
       <div class="swiper swiper-section testimonial-swiper fade-in-up">
         <div class="swiper-wrapper">
-
           <div class="swiper-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"Pelayanannya sangat ramah dan cepat. Dokternya menjelaskan kondisi saya
-                dengan detail. Saya merasa sangat diperhatikan selama perawatan di sini."</p>
-              <p class="testimonial-name">Ibu Siti Aminah</p>
-              <p class="testimonial-role">Pasien Rawat Inap</p>
-            </div>
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 01">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/00d13b390b3c11f7197d1bafccecf50d.jpg" alt="Foto ilustrasi Pasien Demo 01" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 01</span>
+              <span class="testimonial-role">Rawat Jalan &middot; Dummy</span>
+              <span class="testimonial-text">Petugas menyambut saya dengan ramah dan membantu menjelaskan alur kunjungan sejak awal. Saat pemeriksaan, saya diberi kesempatan untuk bertanya sehingga informasi terasa lebih mudah&hellip;</span>
+              <span class="testimonial-full" hidden>Petugas menyambut saya dengan ramah dan membantu menjelaskan alur kunjungan sejak awal. Saat pemeriksaan, saya diberi kesempatan untuk bertanya sehingga informasi terasa lebih mudah dipahami. Area tunggu juga terasa nyaman, dan petunjuk menuju ruang pemeriksaan membantu saya menemukan tempat yang dituju.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
           </div>
 
           <div class="swiper-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"Fasilitas rumah sakitnya bersih dan nyaman. Perawatnya sigap dan penuh
-                perhatian. Terima kasih RSU El-Syifa sudah merawat keluarga kami."</p>
-              <p class="testimonial-name">Bapak Dedi Supriadi</p>
-              <p class="testimonial-role">Keluarga Pasien</p>
-            </div>
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 02">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/0e6fa497f2b052d1faaca243958c498f.jpg" alt="Foto ilustrasi Pasien Demo 02" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 02</span>
+              <span class="testimonial-role">Rawat Inap &middot; Dummy</span>
+              <span class="testimonial-text">Selama menjalani perawatan, saya merasa terbantu oleh petugas yang menjelaskan kegiatan harian dengan bahasa sederhana. Keluarga saya juga mendapat arahan mengenai waktu kunjungan dan&hellip;</span>
+              <span class="testimonial-full" hidden>Selama menjalani perawatan, saya merasa terbantu oleh petugas yang menjelaskan kegiatan harian dengan bahasa sederhana. Keluarga saya juga mendapat arahan mengenai waktu kunjungan dan kebutuhan selama mendampingi. Suasana ruang yang tertata membuat waktu istirahat terasa lebih nyaman sepanjang kunjungan ini.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
           </div>
 
           <div class="swiper-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
-              </div>
-              <p class="testimonial-text">"Proses pendaftaran dan pemeriksaan cepat, tidak perlu menunggu lama. Dokter
-                spesialisnya sangat kompeten dan ramah. Recommended!"</p>
-              <p class="testimonial-name">Ibu Rina Wulandari</p>
-              <p class="testimonial-role">Pasien Rawat Jalan</p>
-            </div>
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 03">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/266eb50cde2c4e55b898992462d9669d.jpg" alt="Foto ilustrasi Pasien Demo 03" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 03</span>
+              <span class="testimonial-role">Kunjungan Poliklinik &middot; Dummy</span>
+              <span class="testimonial-text">Saya datang untuk berkonsultasi dan mendapat penjelasan yang runtut mengenai alur pemeriksaan. Petugas membantu menunjukkan lokasi ruang yang tepat, sementara dokter memberi waktu untuk&hellip;</span>
+              <span class="testimonial-full" hidden>Saya datang untuk berkonsultasi dan mendapat penjelasan yang runtut mengenai alur pemeriksaan. Petugas membantu menunjukkan lokasi ruang yang tepat, sementara dokter memberi waktu untuk mendengarkan pertanyaan saya. Pengalaman ini membuat saya merasa lebih tenang dalam mengikuti proses pelayanan dari awal hingga selesai.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
           </div>
 
           <div class="swiper-slide">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"Sudah beberapa kali berobat di sini, selalu puas dengan pelayanannya.
-                Lokasinya juga strategis dan mudah dijangkau. RSU El-Syifa memang terbaik!"</p>
-              <p class="testimonial-name">Bapak Agus Hermawan</p>
-              <p class="testimonial-role">Pasien Poliklinik</p>
-            </div>
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 04">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/32207317_1907304385946969_323902450366939136_n.jpg" alt="Foto ilustrasi Pasien Demo 04" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 04</span>
+              <span class="testimonial-role">Pemeriksaan Laboratorium &middot; Dummy</span>
+              <span class="testimonial-text">Informasi mengenai persiapan pemeriksaan disampaikan dengan jelas sehingga saya dapat mengikuti arahan dengan lebih mudah. Petugas juga menjelaskan tahapan pelayanan dan tempat untuk menanyakan&hellip;</span>
+              <span class="testimonial-full" hidden>Informasi mengenai persiapan pemeriksaan disampaikan dengan jelas sehingga saya dapat mengikuti arahan dengan lebih mudah. Petugas juga menjelaskan tahapan pelayanan dan tempat untuk menanyakan hasil pemeriksaan. Saya menghargai sikap yang ramah serta perhatian terhadap kenyamanan selama berada di ruang pelayanan.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
           </div>
 
+          <div class="swiper-slide">
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 05">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/4470b9222ef41886d5b1421d88c6ba57.jpg" alt="Foto ilustrasi Pasien Demo 05" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 05</span>
+              <span class="testimonial-role">Layanan Rehabilitasi &middot; Dummy</span>
+              <span class="testimonial-text">Saya merasa terbantu oleh penjelasan petugas mengenai tahapan kunjungan dan kegiatan yang akan dilakukan. Instruksi disampaikan perlahan, dan saya dapat bertanya ketika ada bagian&hellip;</span>
+              <span class="testimonial-full" hidden>Saya merasa terbantu oleh penjelasan petugas mengenai tahapan kunjungan dan kegiatan yang akan dilakukan. Instruksi disampaikan perlahan, dan saya dapat bertanya ketika ada bagian yang belum dipahami. Pendamping saya juga memperoleh arahan yang jelas untuk membantu selama proses kunjungan berlangsung.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+
+          <div class="swiper-slide">
+            <button type="button" class="testimonial-card" data-bs-toggle="modal" data-bs-target="#testimonialModal" aria-label="Baca testimoni lengkap Pasien Demo 06">
+              <img class="testimonial-avatar" src="assets/img/Testimoni/7801d3122770d5c53fcbeabf1018276d.jpg" alt="Foto ilustrasi Pasien Demo 06" width="56" height="56" loading="lazy">
+              <span class="testimonial-name">Pasien Demo 06</span>
+              <span class="testimonial-role">Pemeriksaan Radiologi &middot; Dummy</span>
+              <span class="testimonial-text">Petugas memberikan arahan sebelum pemeriksaan dan menjelaskan posisi yang perlu saya ikuti dengan tenang. Saya merasa nyaman karena dapat menyampaikan pertanyaan terlebih dahulu. Setelah&hellip;</span>
+              <span class="testimonial-full" hidden>Petugas memberikan arahan sebelum pemeriksaan dan menjelaskan posisi yang perlu saya ikuti dengan tenang. Saya merasa nyaman karena dapat menyampaikan pertanyaan terlebih dahulu. Setelah selesai, saya memperoleh informasi mengenai langkah berikutnya dan tempat yang bisa dihubungi untuk menanyakan proses pengambilan hasil.</span>
+              <span class="testimonial-read-more">Baca selengkapnya <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
         </div>
-        <div class="swiper-pagination mt-4"></div>
+      </div>
+      <div class="unit-pagination-controls" aria-label="Navigasi Testimoni">
+        <button type="button" class="unit-prev" aria-label="Testimoni sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+        <div class="unit-pagination"></div>
+        <button type="button" class="unit-next" aria-label="Testimoni berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="testimonialModal" tabindex="-1" aria-labelledby="testimonialModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content testimonial-modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="testimonialModalTitle">Testimoni Lengkap</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup testimoni"></button>
+        </div>
+        <div class="modal-body">
+          <div class="testimonial-modal-person">
+            <img class="testimonial-avatar" id="testimonialModalAvatar" alt="" width="56" height="56">
+            <div>
+              <p class="testimonial-name mb-1" id="testimonialModalName"></p>
+              <p class="testimonial-role mb-0" id="testimonialModalRole"></p>
+            </div>
+          </div>
+          <p class="testimonial-modal-text" id="testimonialModalText"></p>
+          <p class="testimonial-dummy-note">Konten dummy untuk ilustrasi, bukan pengalaman atau ulasan pasien asli.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ============================================
        13. PARTNERSHIP
@@ -948,32 +997,42 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-bpjs.png" alt="BPJS Kesehatan" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/Biznet.png" alt="Biznet" loading="lazy">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-mandiri.png" alt="Mandiri Inhealth" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/bpjs.png" alt="bpjs" loading="lazy">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-prudential.png" alt="Prudential" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/bsi.png" alt="Prudential" loading="lazy">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-allianz.png" alt="Allianz" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/fresenius.png" alt="Allianz" loading="lazy">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-admedika.png" alt="AdMedika" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/Hana_Bank.png" alt="AdMedika" loading="lazy">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="partner-logo-wrapper">
-              <img src="assets/img/partner-bni.png" alt="BNI Life" loading="lazy">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/kemenkes.png" alt="BNI Life" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo-wrapper">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/Kuningan.png" alt="BNI Life" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo-wrapper">
+              <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/partner/niaga.png" alt="BNI Life" loading="lazy">
             </div>
           </div>
         </div>
@@ -984,11 +1043,11 @@
   <!-- ============================================
        14. KONTAK & LOKASI
        ============================================ -->
-  <section class="section-padding section-dark" id="kontak">
+  <section class="section-padding section-warm" id="kontak">
     <div class="container">
       <div class="section-header fade-in-up">
         <span class="section-subtitle">Hubungi Kami</span>
-        <h2 class="section-title" style="color: var(--color-white);">Kontak &amp; Lokasi</h2>
+        <h2 class="section-title">Kontak &amp; Lokasi</h2>
         <p class="section-desc">Kami siap melayani Anda. Jangan ragu untuk menghubungi kami kapan saja.</p>
       </div>
       <div class="row g-5 align-items-start">
@@ -1026,19 +1085,12 @@
             </div>
           </div>
 
-          <div class="mt-3">
-            <a href="https://wa.me/6285910577797" target="_blank" rel="noopener noreferrer"
-              class="btn btn-elsyifa-outline">
-              <i class="bi bi-whatsapp me-1"></i> Chat via WhatsApp
-            </a>
-          </div>
-
         </div>
         <div class="col-lg-7 fade-in-up">
           <div class="map-wrapper">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0!2d108.48!3d-6.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTgnMTIuMCJTIDEwOMKwMjknMjQuMCJF!5e0!3m2!1sid!2sid!4v1"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.0777916334453!2d108.51929686960318!3d-6.9725678683775545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f16aaf953c4bb%3A0xa0edc117fc5e90b7!2sRSU%20El-Syifa!5e0!3m2!1sid!2sid!4v1790711944954!5m2!1sid!2sid"
+              width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
               title="Lokasi RSU El-Syifa Kuningan"></iframe>
           </div>
         </div>
@@ -1054,7 +1106,7 @@
       <div class="row g-4">
 
         <!-- About -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
           <div class="d-flex align-items-center gap-2 mb-3">
             <img src="assets/img/Logo/logo.png" alt="Logo RSU El-Syifa" width="40" height="40" loading="lazy">
             <h5 class="mb-0">RSU El-Syifa Kuningan</h5>
@@ -1068,44 +1120,22 @@
             <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
-
-        <!-- Quick Links -->
-        <div class="col-lg-2 col-md-6">
-          <h5>Navigasi</h5>
-          <ul class="footer-links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="dokter.html">Dokter</a></li>
-            <li><a href="ruang-rawat.html">Ruang Rawat</a></li>
-            <li><a href="artikel.html">Artikel</a></li>
-            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
-          </ul>
-        </div>
-
-        <!-- Layanan -->
         <div class="col-lg-3 col-md-6">
-          <h5>Layanan</h5>
-          <ul class="footer-links">
-            <li><a href="#poliklinik">Poliklinik Spesialis</a></li>
-            <li><a href="#ruang-rawat">Rawat Inap</a></li>
-            <li><a href="#unit-instalasi">IGD 24 Jam</a></li>
-            <li><a href="#unit-instalasi">Laboratorium</a></li>
-            <li><a href="#unit-instalasi">Radiologi</a></li>
-            <li><a href="#unit-instalasi">Farmasi</a></li>
-          </ul>
+          <h5><a class="footer-policy-title" href="ketentuan-pengguna.html">Ketentuan Pengguna</a></h5>
+          <p>Panduan penggunaan situs, informasi layanan, dan tanggung jawab pengunjung.</p>
+          <a class="footer-policy-link" href="ketentuan-pengguna.html">Baca Ketentuan Pengguna <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
         </div>
-
-        <!-- Contact -->
         <div class="col-lg-3 col-md-6">
-          <h5>Kontak</h5>
-          <p class="mb-2"><i class="bi bi-geo-alt-fill text-accent me-2"></i>Jl. RE Martadinata No.108, Kuningan</p>
-          <p class="mb-2"><i class="bi bi-telephone-fill text-accent me-2"></i>(0232) 876240</p>
-          <p class="mb-2"><i class="bi bi-whatsapp text-accent me-2"></i>+62 859-1057-77797</p>
-          <p class="mb-0"><i class="bi bi-envelope-fill text-accent me-2"></i>info@rsuelsyifa.co.id</p>
+          <h5><a class="footer-policy-title" href="kebijakan-privasi.html">Kebijakan Privasi</a></h5>
+          <p>Informasi mengenai data pengunjung, layanan pihak ketiga, dan cara menghubungi kami.</p>
+          <a class="footer-policy-link" href="kebijakan-privasi.html">Baca Kebijakan Privasi <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
         </div>
-
+        <div class="col-lg-3 col-md-6">
+          <h5><a class="footer-policy-title" href="cookie.html">Cookie</a></h5>
+          <p>Penjelasan cookie, konten eksternal, dan pilihan pengaturan browser Anda.</p>
+          <a class="footer-policy-link" href="cookie.html">Baca Kebijakan Cookie <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
       </div>
-
-      <!-- Copyright -->
       <div class="footer-bottom">
         <p class="mb-0">&copy; 2026 RSU El-Syifa Kuningan. Seluruh hak cipta dilindungi undang-undang.</p>
       </div>
@@ -1129,10 +1159,30 @@
   <!-- ============================================
        SCRIPTS
        ============================================ -->
+
+  <div class="modal fade" id="doctorScheduleModal" tabindex="-1" aria-labelledby="doctorScheduleTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content doctor-schedule-modal">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="doctorScheduleTitle">Jadwal Dokter</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup jadwal"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="fs-6" id="doctorScheduleName"></h3>
+          <p id="doctorScheduleText"></p>
+          <p class="small text-muted">Jadwal dapat berubah. Silakan konfirmasi kepada rumah sakit sebelum berkunjung.</p>
+          <a href="https://wa.me/6285910577797" class="btn btn-elsyifa" target="_blank" rel="noopener noreferrer">Konfirmasi Jadwal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/mdb-ui-kit/js/mdb.umd.min.js"></script>
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/units.js"></script>
+  <script src="assets/js/gallery.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

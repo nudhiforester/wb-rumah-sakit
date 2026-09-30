@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "instalasi-gawat-darurat", "name": "Instalasi Gawat Darurat", "icon": "instalasi-gawat-darurat.png", "category": "Medis",
+    "summary": "Pelayanan awal untuk kondisi gawat darurat.",
+    "description": "Instalasi Gawat Darurat merupakan unit pelayanan untuk penilaian awal dan penanganan kondisi kegawatdaruratan. Pelayanan dilakukan berdasarkan kebutuhan dan tingkat kegawatan pasien, serta berkoordinasi dengan unit terkait untuk tindak lanjut perawatan.",
+    "scope": ["Penilaian awal kondisi pasien", "Koordinasi penanganan kegawatdaruratan", "Koordinasi tindak lanjut pelayanan"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "ambulance", "name": "Ambulance", "icon": "ambulance.png", "category": "Medis",
+    "summary": "Dukungan transportasi dan pemindahan pasien.",
+    "description": "Unit Ambulance mendukung kebutuhan transportasi pasien dan koordinasi pemindahan antar fasilitas pelayanan. Kebutuhan pendampingan dan kesiapan transportasi perlu dikonfirmasikan kepada rumah sakit sesuai kondisi pasien dan ketersediaan layanan.",
+    "scope": ["Koordinasi kebutuhan transportasi pasien", "Dukungan proses pemindahan pasien", "Komunikasi dengan unit pelayanan terkait"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "farmasi", "name": "Farmasi", "icon": "farmasi.png", "category": "Medis",
+    "summary": "Pengelolaan obat dan pelayanan kefarmasian.",
+    "description": "Instalasi Farmasi mendukung pelayanan melalui pengelolaan perbekalan farmasi dan pelayanan obat sesuai kebutuhan pasien. Unit ini juga menjadi tempat memperoleh informasi penggunaan obat dari tenaga kefarmasian yang berwenang.",
+    "scope": ["Pengelolaan perbekalan farmasi", "Pelayanan resep sesuai ketentuan", "Pemberian informasi obat"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "gizi", "name": "Gizi", "icon": "gizi.png", "category": "Medis",
+    "summary": "Dukungan pelayanan makanan dan kebutuhan gizi pasien.",
+    "description": "Unit Gizi mendukung pemenuhan kebutuhan makanan dan gizi dalam pelayanan rumah sakit. Pelaksanaannya berkoordinasi dengan tim pelayanan agar penyediaan makanan dan kebutuhan diet selaras dengan arahan perawatan pasien.",
+    "scope": ["Koordinasi kebutuhan gizi pasien", "Dukungan penyelenggaraan makanan", "Edukasi gizi sesuai kebutuhan pelayanan"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "hemodialisa", "name": "Hemodialisa", "icon": "hemodialisa.png", "category": "Medis",
+    "summary": "Dukungan pelayanan hemodialisa bagi pasien.",
+    "description": "Unit Hemodialisa merupakan bagian pelayanan yang mendukung pelaksanaan hemodialisa sesuai penilaian dan arahan tenaga medis. Informasi mengenai alur pelayanan, persyaratan, serta jadwal perlu dikonfirmasikan langsung kepada rumah sakit.",
+    "scope": ["Koordinasi alur pelayanan hemodialisa", "Persiapan pelayanan sesuai arahan medis", "Pemantauan dalam proses pelayanan"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "laboratorium", "name": "Laboratorium", "icon": "laboratorium.png", "category": "Medis",
+    "summary": "Pemeriksaan sampel untuk menunjang diagnosis.",
+    "description": "Laboratorium mendukung pelayanan melalui pemeriksaan sampel sesuai permintaan pemeriksaan. Hasil pemeriksaan menjadi salah satu informasi bagi dokter dalam menilai kondisi pasien dan menentukan tindak lanjut pelayanan.",
+    "scope": ["Penerimaan dan pengelolaan sampel", "Pelaksanaan pemeriksaan laboratorium", "Penyampaian hasil melalui alur pelayanan"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "radiologi", "name": "Radiologi", "icon": "radiologi.png", "category": "Medis",
+    "summary": "Pemeriksaan pencitraan sebagai penunjang medis.",
+    "description": "Radiologi mendukung proses pemeriksaan melalui pencitraan sesuai permintaan dan pertimbangan tenaga medis. Jenis pemeriksaan, persiapan, dan ketersediaan layanan dapat ditanyakan kepada rumah sakit sebelum kunjungan.",
+    "scope": ["Koordinasi permintaan pemeriksaan", "Pelaksanaan pencitraan sesuai layanan tersedia", "Pengelolaan hasil pemeriksaan"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "rehabilitasi-medis", "name": "Rehabilitasi Medis", "icon": "rehabilitasi-medis.png", "category": "Medis",
+    "summary": "Pendampingan pemulihan fungsi dan aktivitas pasien.",
+    "description": "Rehabilitasi Medis mendukung upaya pemulihan dan pemeliharaan fungsi tubuh sesuai kebutuhan pasien. Rencana pelayanan ditentukan melalui penilaian tenaga yang berwenang dan disesuaikan dengan kondisi masing-masing pasien.",
+    "scope": ["Koordinasi penilaian kebutuhan rehabilitasi", "Pendampingan program sesuai arahan pelayanan", "Edukasi untuk mendukung aktivitas pasien"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "rekam-medis", "name": "Rekam Medis", "icon": "rekam-medis.png", "category": "Non Medis",
+    "summary": "Pengelolaan dokumentasi pelayanan pasien.",
+    "description": "Unit Rekam Medis mendukung pengelolaan dokumentasi dan informasi pelayanan pasien. Akses dan permintaan dokumen mengikuti prosedur rumah sakit serta ketentuan kerahasiaan yang berlaku.",
+    "scope": ["Pengelolaan dokumentasi pelayanan", "Dukungan kelengkapan informasi pasien", "Pelayanan permintaan dokumen sesuai prosedur"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "ipsrs", "name": "IPSRS", "icon": "ipsrs.png", "category": "Non Medis",
+    "summary": "Pemeliharaan sarana dan prasarana rumah sakit.",
+    "description": "Instalasi Pemeliharaan Sarana Rumah Sakit (IPSRS) mendukung kesiapan sarana dan prasarana operasional. Unit ini berkoordinasi dengan bagian terkait dalam pemeliharaan serta tindak lanjut kebutuhan perbaikan fasilitas.",
+    "scope": ["Koordinasi pemeliharaan fasilitas", "Penanganan laporan kebutuhan perbaikan", "Dukungan kesiapan sarana operasional"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "kesling", "name": "Kesling", "icon": "Kesling.png", "category": "Non Medis",
+    "summary": "Dukungan kesehatan lingkungan rumah sakit.",
+    "description": "Unit Kesehatan Lingkungan (Kesling) mendukung pengelolaan lingkungan rumah sakit. Lingkupnya berkaitan dengan pemantauan sanitasi dan koordinasi upaya menjaga lingkungan pelayanan yang bersih serta layak digunakan.",
+    "scope": ["Pemantauan kondisi sanitasi lingkungan", "Koordinasi kebersihan lingkungan pelayanan", "Dukungan pengelolaan lingkungan rumah sakit"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "sirs", "name": "SIRS", "icon": "sirs.png", "category": "Non Medis",
+    "summary": "Dukungan sistem informasi operasional rumah sakit.",
+    "description": "Sistem Informasi Rumah Sakit (SIRS) mendukung pengelolaan informasi dan kebutuhan sistem dalam operasional rumah sakit. Unit terkait berkoordinasi dengan pengguna internal agar pemanfaatan sistem dapat mendukung proses pelayanan.",
+    "scope": ["Dukungan penggunaan sistem informasi", "Koordinasi kebutuhan informasi operasional", "Penanganan kendala sistem melalui prosedur internal"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "administrasi-keuangan", "name": "Administrasi & Keuangan", "icon": "administrasi-keuangan.png", "category": "Non Medis",
+    "summary": "Pengelolaan administrasi dan informasi pembayaran.",
+    "description": "Unit Administrasi dan Keuangan mendukung proses administrasi serta pengelolaan keuangan rumah sakit. Informasi terkait dokumen administrasi, tagihan, dan pembayaran dapat dikonfirmasikan melalui petugas sesuai alur pelayanan.",
+    "scope": ["Dukungan administrasi operasional", "Informasi administrasi pembayaran", "Koordinasi dokumen keuangan sesuai prosedur"], "personnel": [], "photos": []
+  },
+  {
+    "slug": "kepegawaian", "name": "Kepegawaian", "icon": "kepegawaian.png", "category": "Non Medis",
+    "summary": "Dukungan administrasi dan pengelolaan pegawai.",
+    "description": "Unit Kepegawaian mendukung pengelolaan administrasi sumber daya manusia rumah sakit. Pelayanan unit berfokus pada kebutuhan administrasi pegawai serta koordinasi informasi kepegawaian dengan bagian terkait.",
+    "scope": ["Pengelolaan administrasi pegawai", "Koordinasi informasi kepegawaian", "Dukungan kebutuhan sumber daya manusia"], "personnel": [], "photos": []
+  }
+]

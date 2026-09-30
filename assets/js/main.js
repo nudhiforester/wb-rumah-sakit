@@ -7,23 +7,7 @@
 
 $(document).ready(function () {
 
-  // ========================================
-  // 1. Preloader
-  // ========================================
-  $(window).on('load', function () {
-    $('#preloader').addClass('fade-out');
-    setTimeout(function () {
-      $('#preloader').remove();
-    }, 600);
-  });
-
-  // Fallback: remove preloader after 3s in case of slow load
-  setTimeout(function () {
-    $('#preloader').addClass('fade-out');
-    setTimeout(function () {
-      $('#preloader').remove();
-    }, 600);
-  }, 3000);
+  // Preloader is managed independently by assets/js/preloader.js.
 
   // ========================================
   // 2. Navbar scroll effect
@@ -57,6 +41,7 @@ $(document).ready(function () {
   // 4. Smooth scroll for anchor links
   // ========================================
   $('a[href^="#"]').on('click', function (e) {
+    if (this.hasAttribute('data-bs-toggle') || this.getAttribute('href') === '#') return;
     var target = $(this.getAttribute('href'));
     if (target.length) {
       e.preventDefault();
@@ -148,7 +133,7 @@ $(document).ready(function () {
   // ========================================
   // 7. Lightbox / Gallery Modal
   // ========================================
-  $('.gallery-item[data-img]').on('click', function () {
+  $('.gallery-item[data-img], .history-photo[data-img], .doctor-photo[data-img]').on('click', function () {
     var imgSrc = $(this).data('img');
     var imgAlt = $(this).find('img').attr('alt') || 'Galeri RSU El-Syifa';
     $('#lightboxImage').attr('src', imgSrc).attr('alt', imgAlt);
@@ -158,6 +143,22 @@ $(document).ready(function () {
   $('#lightboxModal').on('hidden.bs.modal', function () {
     $('#lightboxImage').attr('src', '');
   });
+
+  var scheduleModal = document.getElementById('doctorScheduleModal');
+  if (scheduleModal) {
+    scheduleModal.addEventListener('show.bs.modal', function (event) {
+      var trigger = event.relatedTarget;
+      if (!trigger) return;
+      document.getElementById('doctorScheduleName').textContent = trigger.getAttribute('data-doctor');
+      document.getElementById('doctorScheduleText').textContent = trigger.getAttribute('data-schedule');
+    });
+  }
+
+  if (window.bootstrap && window.bootstrap.Tooltip) {
+    document.querySelectorAll('.doctor-card [data-bs-toggle="tooltip"]').forEach(function (element) {
+      new bootstrap.Tooltip(element, { container: 'body', placement: 'top' });
+    });
+  }
 
   // ========================================
   // 8. Swiper Initializations
@@ -188,8 +189,14 @@ $(document).ready(function () {
     new Swiper('.poliklinik-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
+      navigation: {
+        nextEl: '#poliklinik .unit-next',
+        prevEl: '#poliklinik .unit-prev',
+        addIcons: false,
+      },
       pagination: {
-        el: '.poliklinik-swiper .swiper-pagination',
+        el: '#poliklinik .unit-pagination',
+        dynamicBullets: true,
         clickable: true,
       },
       breakpoints: {
@@ -203,20 +210,22 @@ $(document).ready(function () {
   // Dokter Swiper
   if (document.querySelector('.dokter-swiper')) {
     new Swiper('.dokter-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 24,
+      slidesPerView: 2,
+      spaceBetween: 12,
       navigation: {
-        nextEl: '.dokter-swiper .swiper-button-next',
-        prevEl: '.dokter-swiper .swiper-button-prev',
+        nextEl: '#dokter .unit-next',
+        prevEl: '#dokter .unit-prev',
+        addIcons: false,
       },
       pagination: {
-        el: '.dokter-swiper .swiper-pagination',
+        el: '#dokter .unit-pagination',
+        dynamicBullets: true,
         clickable: true,
       },
       breakpoints: {
-        576: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1200: { slidesPerView: 4 },
+        576: { slidesPerView: 2, spaceBetween: 20 },
+        768: { slidesPerView: 3, spaceBetween: 24 },
+        1200: { slidesPerView: 4, spaceBetween: 24 },
       },
     });
   }
@@ -227,11 +236,13 @@ $(document).ready(function () {
       slidesPerView: 1,
       spaceBetween: 24,
       navigation: {
-        nextEl: '.ruang-swiper .swiper-button-next',
-        prevEl: '.ruang-swiper .swiper-button-prev',
+        nextEl: '#ruang-rawat .unit-next',
+        prevEl: '#ruang-rawat .unit-prev',
+        addIcons: false,
       },
       pagination: {
-        el: '.ruang-swiper .swiper-pagination',
+        el: '#ruang-rawat .unit-pagination',
+        dynamicBullets: true,
         clickable: true,
       },
       breakpoints: {
@@ -246,8 +257,14 @@ $(document).ready(function () {
     new Swiper('.artikel-swiper', {
       slidesPerView: 1,
       spaceBetween: 24,
+      navigation: {
+        nextEl: '#artikel .unit-next',
+        prevEl: '#artikel .unit-prev',
+        addIcons: false,
+      },
       pagination: {
-        el: '.artikel-swiper .swiper-pagination',
+        el: '#artikel .unit-pagination',
+        dynamicBullets: true,
         clickable: true,
       },
       breakpoints: {
@@ -257,17 +274,51 @@ $(document).ready(function () {
     });
   }
 
+  // Keep full testimonial text separate from the 24-word card preview.
+  document.querySelectorAll('.testimonial-card').forEach(function (card) {
+    var fullText = card.querySelector('.testimonial-full').textContent.trim();
+    var words = fullText.split(/\s+/);
+    card.querySelector('.testimonial-text').textContent = words.slice(0, 24).join(' ') + (words.length > 24 ? '\u2026' : '');
+  });
+
+  var testimonialModal = document.getElementById('testimonialModal');
+  var testimonialSwiper;
+  if (testimonialModal) {
+    testimonialModal.addEventListener('show.bs.modal', function (event) {
+      var card = event.relatedTarget;
+      if (!card || !card.matches('.testimonial-card')) return;
+      var avatar = card.querySelector('.testimonial-avatar');
+      var modalAvatar = document.getElementById('testimonialModalAvatar');
+      modalAvatar.src = avatar.getAttribute('src');
+      modalAvatar.alt = avatar.alt;
+      document.getElementById('testimonialModalName').textContent = card.querySelector('.testimonial-name').textContent;
+      document.getElementById('testimonialModalRole').textContent = card.querySelector('.testimonial-role').textContent;
+      document.getElementById('testimonialModalText').textContent = card.querySelector('.testimonial-full').textContent.trim();
+      if (testimonialSwiper) testimonialSwiper.autoplay.stop();
+    });
+    testimonialModal.addEventListener('hidden.bs.modal', function () {
+      if (testimonialSwiper) testimonialSwiper.autoplay.start();
+    });
+  }
+
   // Testimonial Swiper
   if (document.querySelector('.testimonial-swiper')) {
-    new Swiper('.testimonial-swiper', {
+    testimonialSwiper = new Swiper('.testimonial-swiper', {
       slidesPerView: 1,
       spaceBetween: 24,
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      navigation: {
+        nextEl: '#testimonial .unit-next',
+        prevEl: '#testimonial .unit-prev',
+        addIcons: false,
       },
       pagination: {
-        el: '.testimonial-swiper .swiper-pagination',
+        el: '#testimonial .unit-pagination',
+        dynamicBullets: true,
         clickable: true,
       },
       breakpoints: {
