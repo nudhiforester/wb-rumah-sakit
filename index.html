@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 
 <body>
@@ -189,7 +189,13 @@
             <span class="stat-label">Ruang Rawat</span>
           </div>
         </div>
-        <div class="stats-nurse" aria-hidden="true"><div class="stats-nurse-sprite"></div></div>
+        <div class="stats-nurse" aria-hidden="true">
+          <div class="stats-nurse-media">
+            <video class="stats-nurse-video" muted playsinline preload="auto" tabindex="-1" disablepictureinpicture>
+              <source src="assets/img/Video/video_perawat.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
         <div class="stats-item fade-in-up">
           <div class="stat-card">
             <div class="stat-icon">
@@ -1207,9 +1213,9 @@
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/units.js"></script>
   <script src="assets/js/gallery.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=3"></script>
 
-  <script src="assets/js/stats-nurse.js"></script>
+  <script src="assets/js/stats-nurse.js?v=3"></script>
 </body>
 
 </html>
