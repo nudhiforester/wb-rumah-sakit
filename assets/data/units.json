@@ -3,7 +3,23 @@
     "slug": "instalasi-gawat-darurat", "name": "Instalasi Gawat Darurat", "icon": "instalasi-gawat-darurat.png", "category": "Medis",
     "summary": "Pelayanan awal untuk kondisi gawat darurat.",
     "description": "Instalasi Gawat Darurat merupakan unit pelayanan untuk penilaian awal dan penanganan kondisi kegawatdaruratan. Pelayanan dilakukan berdasarkan kebutuhan dan tingkat kegawatan pasien, serta berkoordinasi dengan unit terkait untuk tindak lanjut perawatan.",
-    "scope": ["Penilaian awal kondisi pasien", "Koordinasi penanganan kegawatdaruratan", "Koordinasi tindak lanjut pelayanan"], "personnel": [], "photos": []
+    "scope": ["Penilaian awal kondisi pasien", "Koordinasi penanganan kegawatdaruratan", "Koordinasi tindak lanjut pelayanan"],
+    "teamPhoto": { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/tim/316872cac0e2681111dd239bfe11679a.jpg?ar=16:9&fit=crop", "alt": "Foto tim Instalasi Gawat Darurat RSU El-Syifa" },
+    "showUnitInfo": false,
+    "personnelDummy": true,
+    "personnel": [
+      { "name": "dr. Aditya Pratama", "role": "Kepala Instalasi Gawat Darurat", "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/e7c00b45d978574db2816e16bf632b57.jpg" },
+      { "name": "Ns. Rina Wulandari, S.Kep.", "role": "Koordinator Perawat IGD", "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/aac5fb0e6368609b54382b940b06e34d.jpg" },
+      { "name": "Dimas Saputra, A.Md.Kep.", "role": "Perawat Pelaksana IGD", "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/186a232150e9b8d665457b7cee0a8e09.jpg" }
+    ],
+    "photos": [
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/18186435d1ed95bfc7c397f44bf02071.jpg", "alt": "Dokumentasi Instalasi Gawat Darurat 1" },
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/2418fa8d5057fd2251838778426d8d89.jpg", "alt": "Dokumentasi Instalasi Gawat Darurat 2" },
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/65b0124f9c78f3ed2e31ff89adc9c690.jpg", "alt": "Dokumentasi Instalasi Gawat Darurat 3" },
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/8a43af33b7e6566cd2627bb3b8db10ff.jpg", "alt": "Dokumentasi Instalasi Gawat Darurat 4" },
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/202409021044-main.cropped_1725248678.jpg", "alt": "Dokumentasi Instalasi Gawat Darurat 5" },
+      { "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/IGD/IGD2.jpeg", "alt": "Dokumentasi Instalasi Gawat Darurat 6" }
+    ]
   },
   {
     "slug": "ambulance", "name": "Ambulance", "icon": "ambulance.png", "category": "Medis",
@@ -18,16 +34,133 @@
     "scope": ["Pengelolaan perbekalan farmasi", "Pelayanan resep sesuai ketentuan", "Pemberian informasi obat"], "personnel": [], "photos": []
   },
   {
-    "slug": "gizi", "name": "Gizi", "icon": "gizi.png", "category": "Medis",
+    "slug": "gizi",
+    "name": "Gizi",
+    "icon": "gizi.png",
+    "category": "Medis",
     "summary": "Dukungan pelayanan makanan dan kebutuhan gizi pasien.",
     "description": "Unit Gizi mendukung pemenuhan kebutuhan makanan dan gizi dalam pelayanan rumah sakit. Pelaksanaannya berkoordinasi dengan tim pelayanan agar penyediaan makanan dan kebutuhan diet selaras dengan arahan perawatan pasien.",
-    "scope": ["Koordinasi kebutuhan gizi pasien", "Dukungan penyelenggaraan makanan", "Edukasi gizi sesuai kebutuhan pelayanan"], "personnel": [], "photos": []
+    "scope": [
+      "Koordinasi kebutuhan gizi pasien",
+      "Dukungan penyelenggaraan makanan",
+      "Edukasi gizi sesuai kebutuhan pelayanan"
+    ],
+    "personnel": [
+      {
+        "name": "Ratna Puspitasari, S.Gz.",
+        "role": "Kepala Unit Gizi",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/b893d7ca1bb7fc7dcb449e81021bb301.jpg"
+      },
+      {
+        "name": "Andi Setiawan, S.Gz.",
+        "role": "Ahli Gizi Pelayanan Pasien",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/71fff3701b31e7d777680f80b7f47eba.jpg"
+      },
+      {
+        "name": "Dewi Lestari, A.Md.Gz.",
+        "role": "Koordinator Penyelenggaraan Makanan",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/37e2b92084adcc4b6bf13ed5ed5fb596.jpg"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Gizi/gizi3.jpg",
+        "alt": "Dokumentasi Unit Gizi 1"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Gizi/konsultasi-gizi-rawat-inap-2-1024x684.jpg",
+        "alt": "Dokumentasi Unit Gizi 2"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Gizi/images.jpeg",
+        "alt": "Dokumentasi Unit Gizi 3"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Gizi/hadirkan-konseling-nutrisi-rs-mata-undaan-buka-layanan-poli-gizi--thumbnail-474.jpeg",
+        "alt": "Dokumentasi Unit Gizi 4"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Gizi/gizi.jpeg",
+        "alt": "Dokumentasi Unit Gizi 5"
+      }
+    ],
+    "teamPhoto": {
+      "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/tim/43fa444fe3e89126d774b0306bbd7000.jpg",
+      "alt": "Foto tim Unit Gizi"
+    },
+    "showUnitInfo": false,
+    "personnelDummy": true
   },
   {
-    "slug": "hemodialisa", "name": "Hemodialisa", "icon": "hemodialisa.png", "category": "Medis",
+    "slug": "hemodialisa",
+    "name": "Hemodialisa",
+    "icon": "hemodialisa.png",
+    "category": "Medis",
     "summary": "Dukungan pelayanan hemodialisa bagi pasien.",
     "description": "Unit Hemodialisa merupakan bagian pelayanan yang mendukung pelaksanaan hemodialisa sesuai penilaian dan arahan tenaga medis. Informasi mengenai alur pelayanan, persyaratan, serta jadwal perlu dikonfirmasikan langsung kepada rumah sakit.",
-    "scope": ["Koordinasi alur pelayanan hemodialisa", "Persiapan pelayanan sesuai arahan medis", "Pemantauan dalam proses pelayanan"], "personnel": [], "photos": []
+    "scope": [
+      "Koordinasi alur pelayanan hemodialisa",
+      "Persiapan pelayanan sesuai arahan medis",
+      "Pemantauan dalam proses pelayanan"
+    ],
+    "personnel": [
+      {
+        "name": "dr. Arif Wicaksono, Sp.PD.",
+        "role": "Penanggung Jawab Medis Unit Hemodialisa",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/37e2b92084adcc4b6bf13ed5ed5fb596.jpg"
+      },
+      {
+        "name": "Ns. Bayu Prasetyo, S.Kep.",
+        "role": "Koordinator Perawat Hemodialisa",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/71fff3701b31e7d777680f80b7f47eba.jpg"
+      },
+      {
+        "name": "Ns. Maya Permatasari, S.Kep.",
+        "role": "Perawat Pelaksana Hemodialisa",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/b893d7ca1bb7fc7dcb449e81021bb301.jpg"
+      },
+      {
+        "name": "Fajar Nugroho, A.Md.Kep.",
+        "role": "Perawat Pelaksana Hemodialisa",
+        "photo": "https://6aa97c5b9422e77b387ff09b.imgix.net/Personil/dfa9c50d4b3899974f54d185f65b8580.jpg"
+      }
+    ],
+    "photos": [
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/ruang-hemodialisa-at-prima-medika-hospital-4CI.jpeg",
+        "alt": "Dokumentasi Unit Hemodialisa 1"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Pelayanan-Hemodialisa.png",
+        "alt": "Dokumentasi Unit Hemodialisa 2"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/images.jpeg",
+        "alt": "Dokumentasi Unit Hemodialisa 3"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/Hemodialisis-RSI-Siti-Hajar-Sidoarjo.webp",
+        "alt": "Dokumentasi Unit Hemodialisa 4"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/hd.jpg",
+        "alt": "Dokumentasi Unit Hemodialisa 5"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/291123143559_cuci_darah_atau_.jpg",
+        "alt": "Dokumentasi Unit Hemodialisa 6"
+      },
+      {
+        "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/1.jpeg",
+        "alt": "Dokumentasi Unit Hemodialisa 7"
+      }
+    ],
+    "teamPhoto": {
+      "src": "https://6aa97c5b9422e77b387ff09b.imgix.net/tim/115017d9c135088288fa74f4bf32d7c2.jpg",
+      "alt": "Foto tim Unit Hemodialisa"
+    },
+    "showUnitInfo": false,
+    "personnelDummy": true
   },
   {
     "slug": "laboratorium", "name": "Laboratorium", "icon": "laboratorium.png", "category": "Medis",

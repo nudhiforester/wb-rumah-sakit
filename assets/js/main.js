@@ -133,7 +133,7 @@ $(document).ready(function () {
   // ========================================
   // 7. Lightbox / Gallery Modal
   // ========================================
-  $('.gallery-item[data-img], .history-photo[data-img], .doctor-photo[data-img]').on('click', function () {
+  $('.gallery-item[data-img], .history-photo[data-img], .doctor-photo[data-img], .unit-photo-trigger[data-img]').on('click', function () {
     var imgSrc = $(this).data('img');
     var imgAlt = $(this).find('img').attr('alt') || 'Galeri RSU El-Syifa';
     $('#lightboxImage').attr('src', imgSrc).attr('alt', imgAlt);
@@ -144,13 +144,56 @@ $(document).ready(function () {
     $('#lightboxImage').attr('src', '');
   });
 
+  // Preserve slider position while Bootstrap restores focus to the modal trigger.
+  document.querySelectorAll('#lightboxModal, #doctorScheduleModal, #testimonialModal').forEach(function (modal) {
+    var savedSliderState;
+    modal.addEventListener('show.bs.modal', function (event) {
+      var sliderElement = event.relatedTarget && event.relatedTarget.closest('.dokter-swiper, .testimonial-swiper');
+      var slider = sliderElement && sliderElement.swiper;
+      if (!slider) return;
+      savedSliderState = { slider: slider, index: slider.activeIndex, scrollOnFocus: slider.params.a11y.scrollOnFocus, autoplayRunning: slider.autoplay && slider.autoplay.running };
+      slider.params.a11y.scrollOnFocus = false;
+      if (savedSliderState.autoplayRunning) slider.autoplay.stop();
+    });
+    modal.addEventListener('hidden.bs.modal', function () {
+      if (!savedSliderState) return;
+      var state = savedSliderState;
+      savedSliderState = null;
+      if (state.slider.destroyed) return;
+      state.slider.slideTo(state.index, 0, false);
+      // Restore normal keyboard navigation after Bootstrap's focus restoration completes.
+      setTimeout(function () {
+        if (!state.slider.destroyed) {
+          state.slider.params.a11y.scrollOnFocus = state.scrollOnFocus;
+          if (state.autoplayRunning) state.slider.autoplay.start();
+        }
+      }, 0);
+    });
+  });
+
   var scheduleModal = document.getElementById('doctorScheduleModal');
   if (scheduleModal) {
     scheduleModal.addEventListener('show.bs.modal', function (event) {
       var trigger = event.relatedTarget;
       if (!trigger) return;
-      document.getElementById('doctorScheduleName').textContent = trigger.getAttribute('data-doctor');
-      document.getElementById('doctorScheduleText').textContent = trigger.getAttribute('data-schedule');
+      var name = trigger.getAttribute('data-doctor') || 'Dokter';
+      var schedule = (trigger.getAttribute('data-schedule') || '').trim();
+      var kind = trigger.getAttribute('data-schedule-kind');
+      var hasSchedule = kind !== 'missing' && schedule.length > 0;
+      document.getElementById('doctorScheduleName').textContent = name;
+      document.getElementById('doctorScheduleDemo').hidden = kind !== 'dummy';
+      document.getElementById('doctorScheduleText').textContent = hasSchedule ? schedule : 'Data jadwal praktik untuk ' + name + ' belum tersedia di situs saat ini.';
+      document.getElementById('doctorScheduleGuidance').textContent = hasSchedule
+        ? 'Silakan hubungi petugas untuk memastikan jadwal praktik dan ketersediaan antrean sebelum berkunjung.'
+        : 'Calon pasien dapat menghubungi RSU El-Syifa melalui tombol Konfirmasi Jadwal di bawah. Petugas akan membantu memberikan informasi jadwal terbaru, ketersediaan dokter, dan alur pendaftaran.';
+      var action = document.getElementById('doctorScheduleAction');
+      action.classList.toggle('schedule-action-whatsapp', !hasSchedule);
+      document.getElementById('doctorScheduleActionIcon').className = hasSchedule ? 'bi bi-calendar-plus' : 'bi bi-whatsapp';
+      document.getElementById('doctorScheduleActionLabel').textContent = hasSchedule ? 'Daftar Antrian' : 'Konfirmasi Jadwal';
+      var message = hasSchedule
+        ? 'Halo RSU El-Syifa, saya ingin menanyakan jadwal praktik resmi dan pendaftaran antrean untuk ' + name + '. Mohon informasi ketersediaannya.'
+        : 'Halo RSU El-Syifa, jadwal ' + name + ' belum tersedia di situs. Mohon informasi jadwal praktik terbaru dan cara pendaftarannya.';
+      action.href = 'https://wa.me/6285910577797?text=' + encodeURIComponent(message);
     });
   }
 
@@ -294,10 +337,6 @@ $(document).ready(function () {
       document.getElementById('testimonialModalName').textContent = card.querySelector('.testimonial-name').textContent;
       document.getElementById('testimonialModalRole').textContent = card.querySelector('.testimonial-role').textContent;
       document.getElementById('testimonialModalText').textContent = card.querySelector('.testimonial-full').textContent.trim();
-      if (testimonialSwiper) testimonialSwiper.autoplay.stop();
-    });
-    testimonialModal.addEventListener('hidden.bs.modal', function () {
-      if (testimonialSwiper) testimonialSwiper.autoplay.start();
     });
   }
 

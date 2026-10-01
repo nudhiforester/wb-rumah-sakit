@@ -66,6 +66,7 @@ function discover(root) {
   if (fs.existsSync(unitData)) for (const unit of JSON.parse(fs.readFileSync(unitData, 'utf8'))) {
     const source = 'assets/data/units.json';
     add('assets/img/Unit/' + unit.icon, source, 'index.html');
+    if (unit.teamPhoto) add(unit.teamPhoto.src, source, 'index.html');
     for (const person of unit.personnel || []) if (person.photo) add(person.photo, source, 'index.html');
     for (const photo of unit.photos || []) add(photo.src, source, 'index.html');
   }

@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 
 <body>
@@ -170,8 +170,8 @@
        ============================================ -->
   <section class="section-padding section-warm" id="statistik">
     <div class="container">
-      <div class="row g-4 text-center">
-        <div class="col-6 col-md-3 fade-in-up">
+      <div class="stats-layout">
+        <div class="stats-item fade-in-up">
           <div class="stat-card">
             <div class="stat-icon">
               <i class="bi bi-person-badge"></i>
@@ -180,7 +180,7 @@
             <span class="stat-label">Tenaga Dokter</span>
           </div>
         </div>
-        <div class="col-6 col-md-3 fade-in-up">
+        <div class="stats-item fade-in-up">
           <div class="stat-card">
             <div class="stat-icon">
               <i class="bi bi-building"></i>
@@ -189,7 +189,8 @@
             <span class="stat-label">Ruang Rawat</span>
           </div>
         </div>
-        <div class="col-6 col-md-3 fade-in-up">
+        <div class="stats-nurse" aria-hidden="true"><div class="stats-nurse-sprite"></div></div>
+        <div class="stats-item fade-in-up">
           <div class="stat-card">
             <div class="stat-icon">
               <i class="bi bi-heart-pulse"></i>
@@ -198,7 +199,7 @@
             <span class="stat-label">Pasien Rawat Inap</span>
           </div>
         </div>
-        <div class="col-6 col-md-3 fade-in-up">
+        <div class="stats-item fade-in-up">
           <div class="stat-card">
             <div class="stat-icon">
               <i class="bi bi-people"></i>
@@ -294,36 +295,40 @@
   </section>
 
   <!-- ============================================
-       5. VISI DAN MISI
+       5. VISI, MISI DAN MOTTO
        ============================================ -->
   <section class="section-padding section-cool" id="visi-misi">
     <div class="container">
       <div class="section-header fade-in-up">
-        <span class="section-subtitle">Visi &amp; Misi</span>
+        <span class="section-subtitle">Visi, Misi &amp; Motto</span>
         <h2 class="section-title">Arah &amp; Tujuan Kami</h2>
         <p class="section-desc">Menjadi rumah sakit pilihan utama masyarakat Kuningan dan sekitarnya dalam memberikan
           pelayanan kesehatan yang bermutu.</p>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-6 fade-in-up">
-          <div class="visi-misi-card">
-            <div class="card-icon">
-              <i class="bi bi-eye"></i>
-            </div>
-            <h4>Visi</h4>
-            <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas sesuai dengan motto Rumah Sakit Yaitu Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah.</p>
+      <div class="accordion values-accordion" id="valuesAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="visiHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visiPanel" aria-expanded="false" aria-controls="visiPanel">
+              <span class="values-icon"><i class="bi bi-eye" aria-hidden="true"></i></span>
+              <span class="values-heading"><span class="values-title">Visi</span><span class="values-summary">Harapan yang menjadi arah pelayanan kami</span></span>
+            </button>
+          </h3>
+          <div id="visiPanel" class="accordion-collapse collapse" aria-labelledby="visiHeading" data-bs-parent="#valuesAccordion">
+            <div class="accordion-body"><p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas sesuai dengan motto Rumah Sakit Yaitu Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah.</p>
             <p>Pelayanan kesehatan yang berkualitas adalah hak dasar bagi setiap individu. Namun, masih banyak masyarakat yang mengalami kesulitan dalam memperoleh pelayanan kesehatan yang sesuai dengan kebutuhan mereka. Hal ini bisa disebabkan oleh berbagai faktor, seperti kurangnya fasilitas kesehatan di daerah mereka, biaya yang tinggi, atau kurangnya informasi mengenai pelayanan kesehatan yang tersedia.</p>
             <p>Sebagai tenaga kesehatan, kita memiliki tanggung jawab untuk melayani masyarakat dengan memberikan pelayanan kesehatan yang berkualitas. Hal ini dapat dilakukan dengan berbagai cara, seperti memberikan informasi mengenai kesehatan kepada masyarakat, memastikan ketersediaan fasilitas kesehatan yang memadai, serta memberikan pelayanan kesehatan yang efektif dan aman.</p>
-            <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas juga dapat dilakukan melalui pendekatan partisipatif. Hal ini dapat dilakukan dengan mengajak masyarakat untuk aktif berpartisipasi dalam proses perencanaan, pelaksanaan, dan evaluasi program kesehatan. Dengan melibatkan masyarakat dalam proses ini, diharapkan dapat tercipta program kesehatan yang sesuai dengan kebutuhan masyarakat.</p>
+            <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas juga dapat dilakukan melalui pendekatan partisipatif. Hal ini dapat dilakukan dengan mengajak masyarakat untuk aktif berpartisipasi dalam proses perencanaan, pelaksanaan, dan evaluasi program kesehatan. Dengan melibatkan masyarakat dalam proses ini, diharapkan dapat tercipta program kesehatan yang sesuai dengan kebutuhan masyarakat.</p></div>
           </div>
         </div>
-        <div class="col-lg-6 fade-in-up">
-          <div class="visi-misi-card">
-            <div class="card-icon">
-              <i class="bi bi-bullseye"></i>
-            </div>
-            <h4>Misi</h4>
-            <ul class="misi-list">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="misiHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#misiPanel" aria-expanded="false" aria-controls="misiPanel">
+              <span class="values-icon"><i class="bi bi-bullseye" aria-hidden="true"></i></span>
+              <span class="values-heading"><span class="values-title">Misi</span><span class="values-summary">Langkah nyata untuk mewujudkan pelayanan bermutu</span></span>
+            </button>
+          </h3>
+          <div id="misiPanel" class="accordion-collapse collapse" aria-labelledby="misiHeading" data-bs-parent="#valuesAccordion">
+            <div class="accordion-body"><ul class="misi-list">
               <li>Memberikan pelayanan kesehatan yang berkualitas sesuai dengan syariat islam.</li>
               <li>Pelayanan kesehatan adalah upaya untuk memelihara dan meningkatkan kesehatan individu atau masyarakat. Pelayanan kesehatan dapat dilakukan oleh berbagai jenis tenaga kesehatan, seperti dokter, perawat, bidan, farmasis, dan lain-lain.</li>
               <li>Pelayanan kesehatan yang baik harus memenuhi standar yang ditetapkan, seperti terjangkau, aman, efektif, efisien, dan berkeadilan. Selain itu, pelayanan kesehatan juga harus disesuaikan dengan kebutuhan individu atau masyarakat yang dilayani.</li>
@@ -331,7 +336,21 @@
               <li>Pelayanan kesehatan juga harus didukung oleh teknologi yang canggih, seperti sistem informasi kesehatan dan alat-alat medis yang modern. Hal ini akan membantu tenaga kesehatan dalam memberikan pelayanan yang lebih baik dan efisien.</li>
               <li>Di Indonesia, pelayanan kesehatan telah mengalami banyak kemajuan dalam beberapa tahun terakhir. Pemerintah telah melakukan berbagai upaya untuk meningkatkan pelayanan kesehatan, seperti memberikan fasilitas kesehatan yang lebih baik, meningkatkan jumlah tenaga kesehatan, dan memberikan program-program kesehatan yang efektif.</li>
               <li>Namun, masih banyak tantangan yang harus dihadapi dalam pelayanan kesehatan, seperti kurangnya aksesibilitas bagi masyarakat yang tinggal di daerah terpencil atau kurang mampu secara finansial. Oleh karena itu, pemerintah dan masyarakat perlu bekerja sama untuk terus meningkatkan pelayanan kesehatan agar dapat mencapai tujuan bersama dalam memelihara dan meningkatkan kesehatan masyarakat.</li>
-            </ul>
+            </ul></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="mottoHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mottoPanel" aria-expanded="false" aria-controls="mottoPanel">
+              <span class="values-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></span>
+              <span class="values-heading"><span class="values-title">Motto</span><span class="values-summary">Semangat yang menyertai setiap pelayanan</span></span>
+            </button>
+          </h3>
+          <div id="mottoPanel" class="accordion-collapse collapse" aria-labelledby="mottoHeading" data-bs-parent="#valuesAccordion">
+            <div class="accordion-body"><span class="motto-draft">Redaksi sementara</span>
+                <blockquote class="motto-quote">Melayani dengan hati, menjaga amanah, mengutamakan keselamatan.</blockquote>
+                <p>Setiap pelayanan berawal dari kepedulian. Kami berupaya mendampingi pasien dan keluarga dengan sikap ramah, komunikasi yang jelas, serta penghormatan terhadap kebutuhan setiap individu.</p>
+                <p>Semangat ini diwujudkan melalui nilai Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah sebagai pengingat untuk memberikan pelayanan yang bertanggung jawab dan penuh perhatian.</p></div>
           </div>
         </div>
       </div>
@@ -522,7 +541,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Erika Siti Azhari">dr. Erika Siti Azhari</h5>
                 <span class="doctor-specialty">Dokter Umum</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Erika Siti Azhari" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Erika Siti Azhari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Erika Siti Azhari" data-schedule-kind="dummy" data-schedule="Senin dan Rabu, 08.00 - 11.00 WIB" aria-label="Lihat jadwal dr. Erika Siti Azhari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -534,7 +553,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Raihana Haifa Sopa">dr. Raihana Haifa Sopa</h5>
                 <span class="doctor-specialty">Spesialis Kebidanan</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Raihana Haifa Sopa" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Raihana Haifa Sopa"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Raihana Haifa Sopa" data-schedule-kind="dummy" data-schedule="Selasa dan Kamis, 09.00 - 12.00 WIB" aria-label="Lihat jadwal dr. Raihana Haifa Sopa"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -546,7 +565,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua">dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua</h5>
                 <span class="doctor-specialty">Spesialis Patologi Klinis</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" data-schedule-kind="dummy" data-schedule="Jumat, 08.00 - 10.00 WIB" aria-label="Lihat jadwal dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -558,7 +577,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Syamsyiatul Marifah">dr. Syamsyiatul Marifah</h5>
                 <span class="doctor-specialty">Dokter Umum</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Syamsyiatul Marifah" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Syamsyiatul Marifah"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Syamsyiatul Marifah" data-schedule-kind="missing" data-schedule="" aria-label="Lihat jadwal dr. Syamsyiatul Marifah"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -570,7 +589,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Nadya Pitaloka Purbosari">dr. Nadya Pitaloka Purbosari</h5>
                 <span class="doctor-specialty">Dokter Umum</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Nadya Pitaloka Purbosari" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Nadya Pitaloka Purbosari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Nadya Pitaloka Purbosari" data-schedule-kind="missing" data-schedule="" aria-label="Lihat jadwal dr. Nadya Pitaloka Purbosari"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -582,7 +601,7 @@
               <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Herlina">dr. Herlina</h5>
                 <span class="doctor-specialty">Dokter Umum</span>
-                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Herlina" data-schedule="Jadwal praktik dokter ini belum tersedia di situs. Silakan hubungi rumah sakit untuk informasi terbaru." aria-label="Lihat jadwal dr. Herlina"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
+                <a class="doctor-schedule-link" href="#doctorScheduleModal" data-bs-toggle="modal" data-bs-target="#doctorScheduleModal" data-doctor="dr. Herlina" data-schedule-kind="missing" data-schedule="" aria-label="Lihat jadwal dr. Herlina"><i class="bi bi-calendar3" aria-hidden="true"></i> Lihat Jadwal</a>
               </div>
             </div>
           </div>
@@ -1169,9 +1188,14 @@
         </div>
         <div class="modal-body">
           <h3 class="fs-6" id="doctorScheduleName"></h3>
-          <p id="doctorScheduleText"></p>
-          <p class="small text-muted">Jadwal dapat berubah. Silakan konfirmasi kepada rumah sakit sebelum berkunjung.</p>
-          <a href="https://wa.me/6285910577797" class="btn btn-elsyifa" target="_blank" rel="noopener noreferrer">Konfirmasi Jadwal</a>
+          <p class="schedule-demo-note" id="doctorScheduleDemo" hidden>Contoh jadwal dummy untuk ilustrasi, bukan jadwal praktik resmi.</p>
+          <p class="schedule-information" id="doctorScheduleText"></p>
+          <p class="schedule-guidance" id="doctorScheduleGuidance"></p>
+          <a id="doctorScheduleAction" href="https://wa.me/6285910577797" class="btn btn-elsyifa schedule-action w-100" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp" id="doctorScheduleActionIcon" aria-hidden="true"></i>
+            <span id="doctorScheduleActionLabel">Konfirmasi Jadwal</span>
+          </a>
+          <p class="schedule-action-note">Tombol membuka WhatsApp rumah sakit. Jadwal dan nomor antrean berlaku setelah dikonfirmasi oleh petugas.</p>
         </div>
       </div>
     </div>
@@ -1185,6 +1209,7 @@
   <script src="assets/js/gallery.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <script src="assets/js/stats-nurse.js"></script>
 </body>
 
 </html>

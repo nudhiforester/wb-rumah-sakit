@@ -101,7 +101,7 @@ Urutan section di `index.html`:
 | `statistik` | Statistik rumah sakit | `.stat-number[data-target]` |
 | `sambutan` | Sambutan direktur | Foto di `assets/img/Direktur/` |
 | `sejarah` | Sejarah rumah sakit | Konten HTML |
-| `visi-misi` | Visi dan misi | Konten HTML |
+| `visi-misi` | Visi, misi, dan motto sementara | Bootstrap Accordion `#valuesAccordion`; satu panel terbuka, isi visi/misi dipertahankan |
 | `poliklinik` | Layanan spesialis | `.poliklinik-swiper` |
 | `dokter` | Ringkasan tim dokter | `.dokter-swiper`, tautan `dokter.html` |
 | `ruang-rawat` | Ringkasan ruangan | `.ruang-swiper`, tautan `ruang-rawat.html` |
@@ -118,7 +118,9 @@ Testimoni beranda memakai foto dari `assets/img/Testimoni/` dan diberi label seb
 
 ### Data dan halaman Unit & Instalasi
 
-`assets/data/units.json` menjadi sumber data 14 unit sesuai ikon di `assets/img/Unit/`. Setiap record memiliki `slug`, `name`, `icon` (nama file persis, termasuk `Kesling.png`), `category`, `summary`, `description`, `scope`, `personnel`, dan `photos`. Data personel dan foto unit masih kosong; halaman menampilkan keterangan belum tersedia tanpa membuat data staf fiktif. Penjelasan awal bersifat umum dan dapat diperbarui dengan informasi resmi rumah sakit.
+`assets/data/units.json` menjadi sumber data 14 unit sesuai ikon di `assets/img/Unit/`. Setiap record memiliki `slug`, `name`, `icon` (nama file persis, termasuk `Kesling.png`), `category`, `summary`, `description`, `scope`, `personnel`, dan `photos`. Field opsional `teamPhoto` (`src`, `alt`) menampilkan foto tim sebelum Tentang Unit; `personnelDummy: true` memberi label nama personel sebagai contoh. IGD memiliki foto tim, tiga personel dummy, dan enam foto unit. Gizi menggunakan pola yang sama dengan tiga personel dummy dan lima foto unit; buat ulang halaman ini dengan `node scripts/build-units.cjs --unit=gizi`. Hemodialisa menggunakan pola yang sama dengan empat personel dummy dan tujuh foto unit; buat ulang dengan `node scripts/build-units.cjs --unit=hemodialisa`. Unit tanpa data menampilkan keterangan belum tersedia. Penjelasan awal bersifat umum dan dapat diperbarui dengan informasi resmi rumah sakit.
+
+Foto mendukung path lokal atau URL HTTPS. Generator mengoptimalkan gambar Imgix: tim 16:9, avatar lingkaran, dan galeri 2 × 2 berasio 1:1 pada desktop maupun mobile. Tombol foto membuka lightbox yang ditangani `assets/js/main.js`. Untuk memperbarui hanya halaman IGD tanpa membuat ulang beranda dan halaman unit lainnya, jalankan `node scripts/build-units.cjs --unit=instalasi-gawat-darurat`.
 
 Setelah mengubah data, jalankan dari root proyek:
 
@@ -166,6 +168,8 @@ Urutan JavaScript: jQuery → Bootstrap bundle → MDB UMD → Swiper bundle (be
 Sumber eksternal saat runtime adalah Google Fonts melalui `@import` CSS, Google Maps melalui iframe di beranda, serta WhatsApp melalui tautan `wa.me`. Tidak ada integrasi API WhatsApp di aplikasi. Koleksi `assets/fonts/` belum menggantikan Google Fonts karena `fonts.css` tidak dimuat oleh halaman saat ini.
 
 ## 5. Peta CSS dan JavaScript
+
+Modal jadwal dokter membedakan `data-schedule-kind="dummy"`, `"available"`, dan `"missing"`. Tiga dokter beranda memiliki contoh jadwal yang diberi label dummy; sisanya menampilkan petunjuk konfirmasi. Jika jadwal tersedia, tombol block menampilkan “Daftar Antrian”; jika belum ada, tombol hijau WhatsApp menampilkan “Konfirmasi Jadwal”. Keduanya membuka WhatsApp dengan nama dokter dalam pesan, bukan membuat antrean secara otomatis. Edit `data-schedule` dan statusnya bersama-sama saat data resmi tersedia.
 
 ### CSS: `assets/css/style.css`
 
@@ -317,3 +321,7 @@ Untuk perubahan fungsional, lakukan pemeriksaan sesuai bagian yang disentuh:
 ## 10. Lisensi
 
 Kode repository menggunakan [MIT License](LICENSE), copyright 2026 Solihul Hadi. Dependency pihak ketiga memiliki lisensinya masing-masing.
+
+Pada data unit, `showUnitInfo: false` menyembunyikan panel Informasi Unit dan menggunakan konten satu kolom selebar container. Pengaturan ini diterapkan pada halaman IGD, Gizi, dan Hemodialisa.
+
+Statistik beranda menggunakan grid dua kartu di kiri dan kanan sprite perawat tengah. `assets/js/stats-nurse.js` memetakan posisi pointer ke sembilan sel `assets/img/Sprite/Kolase.png` (3 ? 3, transisi crossfade 160 ms dan lebar tampilan maksimal 280 px), dengan pose netral untuk perangkat sentuh dan preferensi reduced motion.
