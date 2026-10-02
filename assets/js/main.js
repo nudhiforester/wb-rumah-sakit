@@ -40,6 +40,15 @@ $(document).ready(function () {
   // ========================================
   // 4. Smooth scroll for anchor links
   // ========================================
+  function closeMobileNavbar() {
+    var navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse && navbarCollapse.classList.contains('show') && window.bootstrap) {
+      bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false }).hide();
+    }
+  }
+
+  $('#navbarNav .nav-link').on('click', closeMobileNavbar);
+
   $('a[href^="#"]').on('click', function (e) {
     if (this.hasAttribute('data-bs-toggle') || this.getAttribute('href') === '#') return;
     var target = $(this.getAttribute('href'));
@@ -50,10 +59,7 @@ $(document).ready(function () {
       }, 600);
 
       // Close mobile navbar if open
-      var navbarCollapse = $('#navbarNav');
-      if (navbarCollapse.hasClass('show')) {
-        navbarCollapse.collapse('hide');
-      }
+      closeMobileNavbar();
     }
   });
 
@@ -389,7 +395,7 @@ $(document).ready(function () {
   // 9. Active nav link highlight
   // ========================================
   var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  $('.navbar-elsyifa .nav-link').each(function () {
+  $('.navbar-elsyifa:not([data-server-navigation]) .nav-link').each(function () {
     var href = $(this).attr('href');
     if (href === currentPage) {
       $(this).addClass('active');

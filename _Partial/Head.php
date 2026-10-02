@@ -22,5 +22,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=46">
+  <link rel="stylesheet" href="assets/css/style.css?v=48">
+
+ 
 </head>
