@@ -765,6 +765,9 @@
         <button type="button" class="unit-next" aria-label="Halaman galeri berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
         <span class="unit-page-status" aria-live="polite" aria-atomic="true"></span>
     </div>
+    <div class="text-center mt-4">
+        <a href="index.php?page=Galeri" class="btn btn-elsyifa">Lihat Galeri Selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
+    </div>
     </div>
 </section>
 
@@ -867,6 +870,9 @@
         <button type="button" class="unit-prev" aria-label="Testimoni sebelumnya"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
         <div class="unit-pagination"></div>
         <button type="button" class="unit-next" aria-label="Testimoni berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+    </div>
+    <div class="text-center mt-4">
+        <a href="index.php?page=Testimonial" class="btn btn-elsyifa">Lihat Testimonial Selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
     </div>
     </div>
 </section>
