@@ -710,6 +710,23 @@ a {
   .values-accordion .accordion-button { padding: 1rem; gap: 0.75rem; }
   .values-icon { width: 44px; height: 44px; }
   .values-summary { font-size: 0.75rem; }
+  #visi-misi .section-title { font-size: 1.5rem; }
+  #visi-misi .section-desc { font-size: 0.875rem; }
+  .values-accordion .accordion-body {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    scrollbar-width: thin;
+  }
+  .values-accordion .accordion-body:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -2px;
+  }
+  .values-title { font-size: 1rem; }
+  .misi-list li { font-size: inherit; }
+  .motto-quote { font-size: 1.1rem; }
 }
 
 .misi-list {

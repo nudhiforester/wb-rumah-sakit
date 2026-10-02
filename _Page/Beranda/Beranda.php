@@ -212,7 +212,7 @@
             </button>
         </h3>
         <div id="visiPanel" class="accordion-collapse collapse" aria-labelledby="visiHeading" data-bs-parent="#valuesAccordion">
-            <div class="accordion-body"><p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas sesuai dengan motto Rumah Sakit Yaitu Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah.</p>
+            <div class="accordion-body" tabindex="0"><p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas sesuai dengan motto Rumah Sakit Yaitu Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah.</p>
             <p>Pelayanan kesehatan yang berkualitas adalah hak dasar bagi setiap individu. Namun, masih banyak masyarakat yang mengalami kesulitan dalam memperoleh pelayanan kesehatan yang sesuai dengan kebutuhan mereka. Hal ini bisa disebabkan oleh berbagai faktor, seperti kurangnya fasilitas kesehatan di daerah mereka, biaya yang tinggi, atau kurangnya informasi mengenai pelayanan kesehatan yang tersedia.</p>
             <p>Sebagai tenaga kesehatan, kita memiliki tanggung jawab untuk melayani masyarakat dengan memberikan pelayanan kesehatan yang berkualitas. Hal ini dapat dilakukan dengan berbagai cara, seperti memberikan informasi mengenai kesehatan kepada masyarakat, memastikan ketersediaan fasilitas kesehatan yang memadai, serta memberikan pelayanan kesehatan yang efektif dan aman.</p>
             <p>Melayani masyarakat dalam memperoleh haknya untuk mendapatkan pelayanan kesehatan yang berkualitas juga dapat dilakukan melalui pendekatan partisipatif. Hal ini dapat dilakukan dengan mengajak masyarakat untuk aktif berpartisipasi dalam proses perencanaan, pelaksanaan, dan evaluasi program kesehatan. Dengan melibatkan masyarakat dalam proses ini, diharapkan dapat tercipta program kesehatan yang sesuai dengan kebutuhan masyarakat.</p></div>
@@ -226,7 +226,7 @@
             </button>
         </h3>
         <div id="misiPanel" class="accordion-collapse collapse" aria-labelledby="misiHeading" data-bs-parent="#valuesAccordion">
-            <div class="accordion-body"><ul class="misi-list">
+            <div class="accordion-body" tabindex="0"><ul class="misi-list">
             <li>Memberikan pelayanan kesehatan yang berkualitas sesuai dengan syariat islam.</li>
             <li>Pelayanan kesehatan adalah upaya untuk memelihara dan meningkatkan kesehatan individu atau masyarakat. Pelayanan kesehatan dapat dilakukan oleh berbagai jenis tenaga kesehatan, seperti dokter, perawat, bidan, farmasis, dan lain-lain.</li>
             <li>Pelayanan kesehatan yang baik harus memenuhi standar yang ditetapkan, seperti terjangkau, aman, efektif, efisien, dan berkeadilan. Selain itu, pelayanan kesehatan juga harus disesuaikan dengan kebutuhan individu atau masyarakat yang dilayani.</li>
@@ -245,7 +245,7 @@
             </button>
         </h3>
         <div id="mottoPanel" class="accordion-collapse collapse" aria-labelledby="mottoHeading" data-bs-parent="#valuesAccordion">
-            <div class="accordion-body"><span class="motto-draft">Redaksi sementara</span>
+            <div class="accordion-body" tabindex="0"><span class="motto-draft">Redaksi sementara</span>
                 <blockquote class="motto-quote">Melayani dengan hati, menjaga amanah, mengutamakan keselamatan.</blockquote>
                 <p>Setiap pelayanan berawal dari kepedulian. Kami berupaya mendampingi pasien dan keluarga dengan sikap ramah, komunikasi yang jelas, serta penghormatan terhadap kebutuhan setiap individu.</p>
                 <p>Semangat ini diwujudkan melalui nilai Etis, Logis, Sabar, Yakin, Islami, Fitrah, dan Amanah sebagai pengingat untuk memberikan pelayanan yang bertanggung jawab dan penuh perhatian.</p></div>
