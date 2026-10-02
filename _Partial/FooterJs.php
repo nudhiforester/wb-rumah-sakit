@@ -7,6 +7,6 @@
   <script src="assets/js/gallery.js"></script>
   <script src="assets/js/main.js?v=48"></script>
 
-  <script src="assets/js/stats-nurse.js?v=46"></script>
+  <script src="assets/js/stats-nurse.js?v=53"></script>
   <!-- Preloader -->
   <script src="assets/js/preloader.js"></script>

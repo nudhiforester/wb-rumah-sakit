@@ -107,19 +107,23 @@
 <!-- ============================================
     3. SAMBUTAN DIREKTUR
     ============================================ -->
-<section class="section-padding section-cool" id="sambutan">
+<section class="section-padding section-cool" id="sambutan" aria-labelledby="sambutan-title">
     <div class="container">
-    <div class="row align-items-center g-5">
-        <div class="col-lg-5 fade-in-up">
+    <div class="section-header fade-in-up">
+        <h2 class="section-title" id="sambutan-title">Sambutan Direktur</h2>
+        <p class="section-subtitle mb-0">RSU El-Syifa Kuningan</p>
+    </div>
+    <div class="director-welcome-card">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-5">
         <div class="director-img-wrapper">
             <img src="assets/img/Direktur/DirekturRs.png"
             alt="dr. Guruh Ardhianto Kurniawan, MM., CP.NLP — Direktur RSU El-Syifa Kuningan" loading="lazy"
             class="img-fluid">
         </div>
         </div>
-        <div class="col-lg-7 fade-in-up">
-        <span class="section-subtitle">Sambutan Direktur</span>
-        <h2 class="section-title text-start mb-4">RSU El-Syifa Kuningan</h2>
+        <div class="col-lg-7">
+        <div class="director-welcome-text" tabindex="0" role="region" aria-label="Teks sambutan direktur">
         <p class="director-quote">
             "Assalamualaikum Warahmatullahi Wabarakatuh. Salam sejahtera bagi kita semua, puji syukur kita panjatkan ke hadirat Allah SWT atas segala rahmat dan karunia-Nya, sehingga kita diberikan kesehatan hingga saat ini. 
             Kami mengucapkan terima kasih atas kepercayaan yang diberikan kepada kami sebagai penyedia layanan kesehatan bagi masyarakat. Kami terus berkomitmen untuk memberikan pelayanan yang terbaik, berorientasi pada kebutuhan pasien, dengan tetap menjunjung tinggi nilai-nilai profesionalisme dan kepedulian. 
@@ -133,6 +137,8 @@
         </div>
     </div>
     </div>
+    </div>
+    </div>
 </section>
 
 <!-- ============================================
@@ -144,7 +150,7 @@
         <div class="col-lg-7 fade-in-up">
         <span class="section-subtitle">Tentang Kami</span>
         <h2 class="section-title text-start mb-4">Sejarah RSU El-Syifa Kuningan</h2>
-        <div class="history-content">
+        <div class="history-content" tabindex="0">
             <p>RSU El-Syifa Kuningan didirikan atas dasar kepedulian terhadap kebutuhan pelayanan kesehatan masyarakat di
             wilayah Kabupaten Kuningan dan sekitarnya. Berawal dari sebuah klinik sederhana, RSU El-Syifa terus
             berkembang menjadi rumah sakit umum yang menyediakan berbagai layanan kesehatan komprehensif.</p>

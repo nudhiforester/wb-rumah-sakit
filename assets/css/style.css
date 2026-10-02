@@ -524,6 +524,27 @@ a {
   line-height: 1.9;
 }
 
+@media (max-width: 991.98px) {
+  .history-content {
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 0.75rem;
+    scrollbar-width: thin;
+  }
+
+  .history-content:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .history-content {
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+}
+
 .history-album {
   position: relative;
   width: 100%;
@@ -565,17 +586,17 @@ a {
   border-radius: 50%;
   box-shadow: 0 6px 18px rgba(7, 51, 47, 0.12);
   transform: translate(-50%, -50%);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s ease;
 }
 
 .history-album:where(:has(.history-photo:hover, .history-photo:focus-visible)) .history-photo {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.96);
 }
 
 .history-album .history-photo:hover,
 .history-album .history-photo:focus-visible {
-  transform: translate(-50%, -50%) scale(1.12);
-  box-shadow: 0 10px 26px rgba(7, 51, 47, 0.22);
+  transform: translate(-50%, -50%) scale(1.06);
+  box-shadow: 0 8px 22px rgba(7, 51, 47, 0.18);
   z-index: 2;
 }
 
@@ -586,7 +607,7 @@ a {
   object-fit: cover;
   object-position: center;
   filter: grayscale(1);
-  transition: filter 0.3s ease;
+  transition: filter 0.45s ease;
 }
 
 .history-photo:hover img,
@@ -886,6 +907,25 @@ a {
   align-items: center;
   gap: 1rem;
   margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.director-welcome-card {
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-card);
+}
+.director-welcome-text:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+.director-welcome-card .director-title { color: var(--color-primary); }
+@media (max-width: 991.98px) {
+  .director-welcome-card .director-img-wrapper { max-width: 280px; margin: 0 auto; }
+  .director-welcome-text { max-height: 320px; overflow-y: auto; padding-right: 0.75rem; scrollbar-width: thin; }
+  .director-welcome-text .director-quote { font-size: 0.875rem; line-height: 1.75; padding-left: 0.75rem; }
+  .director-welcome-text .director-name { font-size: 0.875rem; }
+  .director-welcome-text .director-title { font-size: 0.75rem; margin-bottom: 0; }
 }
 
 .doctor-page-numbers { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
