@@ -1,0 +1,17 @@
+{
+  "catatan": "Status tempat tidur belum terhubung ke data operasional rumah sakit. Konfirmasikan ketersediaan kepada petugas.",
+  "ruangan": {
+    "Ruang VIP": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}]},
+    "Kelas 1 Umum": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}]},
+    "Kelas 1 Nifas": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}]},
+    "Kelas 1 Anak": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}]},
+    "Kelas 2 Umum": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}]},
+    "Kelas 2 Nifas": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}]},
+    "Kelas 2 Anak": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}]},
+    "Kelas 3 Umum": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}, {"kode": "TT-05", "status": "belum_dikonfirmasi"}, {"kode": "TT-06", "status": "belum_dikonfirmasi"}]},
+    "Kelas 3 Nifas": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}, {"kode": "TT-05", "status": "belum_dikonfirmasi"}, {"kode": "TT-06", "status": "belum_dikonfirmasi"}]},
+    "Kelas 3 Anak": {"tempat_tidur": [{"kode": "TT-01", "status": "belum_dikonfirmasi"}, {"kode": "TT-02", "status": "belum_dikonfirmasi"}, {"kode": "TT-03", "status": "belum_dikonfirmasi"}, {"kode": "TT-04", "status": "belum_dikonfirmasi"}, {"kode": "TT-05", "status": "belum_dikonfirmasi"}, {"kode": "TT-06", "status": "belum_dikonfirmasi"}]},
+    "ICU": {"tempat_tidur": []},
+    "Perinatologi": {"tempat_tidur": []}
+  }
+}

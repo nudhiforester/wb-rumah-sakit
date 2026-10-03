@@ -3,11 +3,12 @@
   var grid = document.getElementById('articlePageGrid');
   if (!grid) return;
   var cards = Array.from(grid.children);
-  var categories = ['Kesehatan Jantung', 'Kesehatan Anak', 'Kegiatan RS', 'Diabetes', 'Gaya Hidup', 'Kegiatan RS'];
+  var categories = cards.map(function (card) { return card.dataset.tag || 'Umum'; });
   var selectedTag = 'Semua';
   var query = '';
   var page = 1;
-  var size = 3;
+  var desktop = window.matchMedia('(min-width: 992px)');
+  var size = desktop.matches ? 9 : 3;
   var pagination = document.getElementById('articlePagination');
   var numbers = pagination.querySelector('.doctor-page-numbers');
   var previous = pagination.querySelector('[data-article-prev]');
@@ -17,14 +18,6 @@
 
   cards.forEach(function (card, index) {
     card.dataset.tag = categories[index] || 'Umum';
-    var badge = document.createElement('span');
-    badge.className = 'article-category';
-    badge.textContent = card.dataset.tag;
-    card.querySelector('.card-body').prepend(badge);
-    var link = card.querySelector('a');
-    link.href = '#articleDemoModal';
-    link.setAttribute('data-bs-toggle', 'modal');
-    link.setAttribute('data-bs-target', '#articleDemoModal');
     if (index < 3) {
       var slide = document.createElement('div');
       slide.className = 'swiper-slide';
@@ -74,6 +67,12 @@
     }
   }
 
+  desktop.addEventListener('change', function () {
+    size = desktop.matches ? 9 : 3;
+    page = 1;
+    render(false);
+  });
+
   ['Semua'].concat(Array.from(new Set(categories))).forEach(function (tag) {
     var button = document.createElement('button');
     button.type = 'button';
@@ -100,12 +99,6 @@
   });
   previous.addEventListener('click', function () { page--; render(true); if (previous.disabled) numbers.children[page - 1].focus({ preventScroll: true }); });
   next.addEventListener('click', function () { page++; render(true); if (next.disabled) numbers.children[page - 1].focus({ preventScroll: true }); });
-  document.getElementById('articleDemoModal').addEventListener('show.bs.modal', function (event) {
-    var card = event.relatedTarget && event.relatedTarget.closest('.article-card');
-    if (!card) return;
-    document.getElementById('articleDemoTitle').textContent = card.querySelector('.card-title').textContent;
-    document.getElementById('articleDemoText').textContent = card.querySelector('.card-text').textContent;
-  });
   if (window.Swiper) {
     new Swiper('.article-featured-swiper', {
       slidesPerView: 1, spaceBetween: 0,

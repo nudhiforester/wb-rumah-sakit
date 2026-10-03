@@ -20,8 +20,22 @@
     currentPage = nextPage;
     var start = (currentPage - 1) * pageSize;
     cards.forEach(function (card, index) {
+      if (card.doctorEntrance) card.doctorEntrance.cancel();
       card.hidden = index < start || index >= start + pageSize;
-      if (!card.hidden) card.classList.add('visible');
+      if (!card.hidden) {
+        card.classList.add('visible');
+        if (card.animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          card.doctorEntrance = card.animate([
+            { opacity: 0, transform: 'translateY(18px)' },
+            { opacity: 1, transform: 'translateY(0)' }
+          ], {
+            duration: 450,
+            delay: (index - start) * 45,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            fill: 'backwards'
+          });
+        }
+      }
     });
     buttons.forEach(function (button, index) {
       if (index + 1 === currentPage) button.setAttribute('aria-current', 'page');

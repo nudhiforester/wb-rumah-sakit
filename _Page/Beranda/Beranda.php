@@ -458,7 +458,7 @@
 
         <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-            <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/776a1b56f8a1659fd811d52c97c11f11.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/776a1b56f8a1659fd811d52c97c11f11.jpg" class="card-img-top" alt="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"
+            <button type="button" class="doctor-photo" data-img="https://rsuelsyifa.id/assets/img/Dokter/f89b3537222a825f28e2f921373bca.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua" aria-haspopup="dialog"><img src="https://rsuelsyifa.id/assets/img/Dokter/f89b3537222a825f28e2f921373bca.png" class="card-img-top" alt="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua"
                 loading="lazy"></button>
             <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua">dr. Hj. Dahvia Nursriyanti Sp. PK , FISQua</h5>
@@ -470,7 +470,7 @@
 
         <div class="swiper-slide">
             <div class="card-elsyifa doctor-card">
-            <button type="button" class="doctor-photo" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dc9aa006296fabb5ae36224da6272cd5.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Syamsyiatul Marifah" aria-haspopup="dialog"><img src="https://6aa97c5b9422e77b387ff09b.imgix.net/dokter/dc9aa006296fabb5ae36224da6272cd5.jpg" class="card-img-top" alt="dr. Syamsyiatul Marifah"
+            <button type="button" class="doctor-photo" data-img="https://rsuelsyifa.id/assets/img/Dokter/0af071ae722f21b32a04dc14628445.png" data-bs-toggle="modal" data-bs-target="#lightboxModal" aria-label="Perbesar foto dr. Syamsyiatul Marifah" aria-haspopup="dialog"><img src="https://rsuelsyifa.id/assets/img/Dokter/0af071ae722f21b32a04dc14628445.png" class="card-img-top" alt="dr. Syamsyiatul Marifah"
                 loading="lazy"></button>
             <div class="card-body">
                 <h5 class="card-title" tabindex="0" data-bs-toggle="tooltip" title="dr. Syamsyiatul Marifah">dr. Syamsyiatul Marifah</h5>
@@ -512,7 +512,7 @@
         <button type="button" class="unit-next" aria-label="Dokter berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
     </div>
     <div class="text-center mt-4 fade-in-up">
-        <a href="dokter.html" class="btn btn-elsyifa">Lihat Semua Dokter <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="index.php?page=Dokter" class="btn btn-elsyifa">Lihat Semua Dokter <i class="bi bi-arrow-right ms-1"></i></a>
     </div>
     </div>
 </section>
@@ -649,58 +649,140 @@
         <h2 class="section-title">Artikel &amp; Berita</h2>
         <p class="section-desc">Informasi kesehatan terbaru dan kegiatan RSU El-Syifa Kuningan.</p>
     </div>
+    <p class="text-secondary small mb-4">Konten demo: seluruh artikel dan kegiatan berikut merupakan data dummy.</p>
     <div class="swiper swiper-section artikel-swiper fade-in-up">
         <div class="swiper-wrapper">
-
         <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/5e7fd3a1878d3dfc736bf02657989f51.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+            <img src="https://res.cloudinary.com/dweltjc1a/image/upload/v1743641823/samples/food/pot-mussels.jpg" class="card-img-top" alt="Tips Menjaga Kesehatan Jantung" loading="lazy">
             <div class="card-body">
-                <span class="card-date">20 September 2026</span>
-                <h5 class="card-title mt-2"><a href="artikel.html">Tips Menjaga Kesehatan Jantung di Usia Muda</a></h5>
-                <p class="card-text">Penyakit jantung bukan hanya menyerang lansia. Kenali cara menjaga kesehatan
-                jantung sejak dini.</p>
+              <span class="card-date">20 September 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Tips Menjaga Kesehatan Jantung di Usia Muda</a></h5>
+              <p class="card-text">Penyakit jantung bukan hanya menyerang lansia. Kenali cara menjaga kesehatan jantung sejak dini dengan pola hidup sehat dan olahraga teratur.</p>
             </div>
-            </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/ee82309347da2e13c5092b4de12706eb.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/ee82309347da2e13c5092b4de12706eb.jpg" class="card-img-top" alt="Pentingnya Imunisasi Anak" loading="lazy">
             <div class="card-body">
-                <span class="card-date">15 September 2026</span>
-                <h5 class="card-title mt-2"><a href="artikel.html">Pentingnya Imunisasi Lengkap untuk Anak</a></h5>
-                <p class="card-text">Imunisasi merupakan langkah penting untuk melindungi anak dari berbagai penyakit
-                berbahaya.</p>
+              <span class="card-date">15 September 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Pentingnya Imunisasi Lengkap untuk Anak</a></h5>
+              <p class="card-text">Imunisasi merupakan langkah penting untuk melindungi anak dari berbagai penyakit berbahaya. Ketahui jadwal imunisasi yang tepat.</p>
             </div>
-            </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG" class="card-img-top" alt="Bakti Sosial Kesehatan" loading="lazy">
             <div class="card-body">
-                <span class="card-date">10 September 2026</span>
-                <h5 class="card-title mt-2"><a href="artikel.html">RSU El-Syifa Gelar Bakti Sosial Kesehatan</a></h5>
-                <p class="card-text">RSU El-Syifa menggelar bakti sosial pemeriksaan kesehatan gratis untuk masyarakat
-                sekitar.</p>
+              <span class="card-date">10 September 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">RSU El-Syifa Gelar Bakti Sosial Kesehatan</a></h5>
+              <p class="card-text">RSU El-Syifa menggelar bakti sosial pemeriksaan kesehatan gratis untuk masyarakat sekitar sebagai bentuk kepedulian terhadap kesehatan.</p>
             </div>
-            </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
             <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/6e1b6283f7bba9d47fed76ce8252662a.jpg" class="card-img-top" alt="Artikel Kesehatan" loading="lazy">
+            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/6e1b6283f7bba9d47fed76ce8252662a.jpg" class="card-img-top" alt="Gejala Diabetes" loading="lazy">
             <div class="card-body">
-                <span class="card-date">5 September 2026</span>
-                <h5 class="card-title mt-2"><a href="artikel.html">Mengenal Gejala Diabetes dan Cara Pencegahannya</a>
-                </h5>
-                <p class="card-text">Diabetes menjadi penyakit kronis yang terus meningkat. Kenali gejalanya dan cara
-                pencegahan efektif.</p>
+              <span class="card-date">5 September 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Mengenal Gejala Diabetes dan Cara Pencegahannya</a></h5>
+              <p class="card-text">Diabetes menjadi penyakit kronis yang terus meningkat. Kenali gejalanya dan cara pencegahan efektif untuk hidup lebih sehat.</p>
             </div>
-            </div>
+          </div>
         </div>
 
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://silamparitv.disway.id/upload/34030eaea25fd783d3f42f92f0dc3851.jpg" class="card-img-top" alt="Pola Hidup Sehat" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">1 September 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">5 Kebiasaan Pola Hidup Sehat yang Mudah Diterapkan</a></h5>
+              <p class="card-text">Menjaga kesehatan tidak harus sulit. Berikut 5 kebiasaan sederhana yang bisa Anda lakukan setiap hari untuk tubuh yang lebih sehat.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqzwCUYSEfrbdoJLqw1iIZgAE8kLo713CrppgXiVExT28Xqeyok96Xs5Y&s=10" class="card-img-top" alt="Seminar Kesehatan" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">28 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">RSU El-Syifa Adakan Seminar Kesehatan Masyarakat</a></h5>
+              <p class="card-text">Dalam rangka meningkatkan kesadaran kesehatan, RSU El-Syifa mengadakan seminar terbuka untuk masyarakat umum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://res.cloudinary.com/dweltjc1a/image/upload/v1743641823/samples/food/pot-mussels.jpg" class="card-img-top" alt="Ilustrasi aktivitas sehari-hari" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">25 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Menyusun Rutinitas Harian yang Lebih Seimbang</a></h5>
+              <p class="card-text">Artikel demo tentang mengatur waktu bekerja, beristirahat, dan melakukan aktivitas yang disukai bersama keluarga.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG" class="card-img-top" alt="Ilustrasi kegiatan rumah sakit" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">22 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Mengenal Alur Kunjungan di RSU El-Syifa</a></h5>
+              <p class="card-text">Artikel demo yang memperkenalkan proses pendaftaran, informasi layanan, dan persiapan kunjungan ke rumah sakit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/ee82309347da2e13c5092b4de12706eb.jpg" class="card-img-top" alt="Ilustrasi layanan untuk anak" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">18 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Persiapan Mendampingi Anak saat Kunjungan</a></h5>
+              <p class="card-text">Artikel demo mengenai persiapan dokumen, barang bawaan, dan pertanyaan yang ingin disampaikan saat mendampingi anak.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://res.cloudinary.com/dweltjc1a/image/upload/v1791049102/makanan-sehat-untuk-diet-yang-lezat-dan-bergizi.avif" class="card-img-top" alt="Ilustrasi pilihan makanan sehat yang lezat dan bergizi" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">15 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Inspirasi Makanan Sehat yang Lezat dan Beragam</a></h5>
+              <p class="card-text">Artikel demo tentang ide menu dengan sayuran, buah, dan lauk yang beragam. Temukan inspirasi penyajian makanan untuk membuat waktu makan lebih menyenangkan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://res.cloudinary.com/dweltjc1a/image/upload/v1791049102/ini-makanan-sehat-yang-perlu-dikonsumsi-setiap-hari.avif" class="card-img-top" alt="Ilustrasi bahan makanan sehat untuk menu sehari-hari" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">12 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Ragam Bahan Makanan untuk Menu Sehat Sehari-hari</a></h5>
+              <p class="card-text">Artikel demo yang memperkenalkan aneka bahan makanan untuk inspirasi menu keluarga. Susun daftar belanja dengan pilihan bahan dan warna yang bervariasi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card-elsyifa article-card">
+            <img src="https://res.cloudinary.com/dweltjc1a/image/upload/v1791049103/18._Menu_Makanan_4_Sehat_5_Sempurna_Pagi_Siang_Malam.avif" class="card-img-top" alt="Ilustrasi variasi menu makan pagi, siang, dan malam" loading="lazy">
+            <div class="card-body">
+              <span class="card-date">9 Agustus 2026</span>
+              <h5 class="card-title mt-2"><a href="index.php?page=Artikel">Ide Menu Makanan Sehat untuk Pagi, Siang, dan Malam</a></h5>
+              <p class="card-text">Artikel demo berisi inspirasi variasi menu dari sarapan hingga makan malam. Rencanakan bahan dan penyajian agar persiapan makanan di rumah lebih praktis.</p>
+            </div>
+          </div>
+        </div>
         </div>
     </div>
     <div class="unit-pagination-controls" aria-label="Navigasi Artikel">
@@ -709,7 +791,7 @@
         <button type="button" class="unit-next" aria-label="Artikel berikutnya"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
     </div>
     <div class="text-center mt-4 fade-in-up">
-        <a href="artikel.html" class="btn btn-elsyifa">Lihat Semua Artikel <i class="bi bi-arrow-right ms-1"></i></a>
+        <a href="index.php?page=Artikel" class="btn btn-elsyifa">Lihat Semua Artikel <i class="bi bi-arrow-right ms-1"></i></a>
     </div>
     </div>
 </section>
@@ -724,49 +806,128 @@
         <h2 class="section-title">Galeri RSU El-Syifa</h2>
         <p class="section-desc">Dokumentasi fasilitas, kegiatan, dan suasana RSU El-Syifa Kuningan.</p>
     </div>
-    <div class="swiper gallery-swiper" aria-label="Album galeri rumah sakit">
-        <div class="swiper-wrapper gallery-grid">
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Lobi Rumah Sakit" aria-haspopup="dialog">
+    <div class="swiper gallery-swiper" data-page-size="4" aria-label="Album galeri rumah sakit">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Lobi Rumah Sakit" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Lobi Rumah Sakit" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Ruang Tunggu" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Ruang Tunggu" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/DSC09712.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Ruang Tunggu" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Poliklinik" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Poliklinik" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/_DSC0563.JPG?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Poliklinik" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Taman RS" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Taman RS" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/3f34ae39446e523e9a173ff07a21ed.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Taman RS" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Farmasi" aria-haspopup="dialog">
+                </div>
+            </div>
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Farmasi" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/21f3baf4c0bd1424bce0d9861fe850.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Farmasi" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Laboratorium" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Laboratorium" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/4729eec03f0e6497caea33dfb994f9.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Laboratorium" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — IGD" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — IGD" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a4ced00a29d4b1ac57fd0e68764185.jpg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — IGD" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
-        <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Kegiatan Sosial" aria-haspopup="dialog">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=max&amp;w=1600&amp;q=80" aria-label="Perbesar foto: Galeri RSU El-Syifa — Kegiatan Sosial" aria-haspopup="dialog">
         <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480" srcset="https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=240&amp;q=70&amp;h=240 240w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=360&amp;q=70&amp;h=360 360w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=480&amp;q=70&amp;h=480 480w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=640&amp;q=70&amp;h=640 640w, https://6aa97c5b9422e77b387ff09b.imgix.net/galeri/a8e6c1ec7a2cd8138420419db37646.jpeg?auto=format%2Ccompress&amp;fit=crop&amp;w=840&amp;q=70&amp;h=840 840w" sizes="(min-width: 1400px) 416px, (min-width: 1200px) 356px, (min-width: 992px) 296px, (min-width: 768px) 342px, (min-width: 576px) 252px, calc((100vw - 36px) / 2)" width="480" height="480" alt="Galeri RSU El-Syifa — Kegiatan Sosial" loading="lazy" decoding="async">
         <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
         </button>
-
+                </div>
+            </div>
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/b04192da736b5cd1b4ee1f979e5204.jpg" aria-label="Perbesar foto: Galeri Dummy 01" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/b04192da736b5cd1b4ee1f979e5204.jpg" alt="Galeri Dummy 01 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/38bfea84233b15c6bb6d69b520e279.jpg" aria-label="Perbesar foto: Galeri Dummy 02" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/38bfea84233b15c6bb6d69b520e279.jpg" alt="Galeri Dummy 02 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/52b02cfb0f3ba9f49f2a921d6ed599.jpg" aria-label="Perbesar foto: Galeri Dummy 03" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/52b02cfb0f3ba9f49f2a921d6ed599.jpg" alt="Galeri Dummy 03 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/cee176d41b6869f064c15069e5595a.jpg" aria-label="Perbesar foto: Galeri Dummy 04" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/cee176d41b6869f064c15069e5595a.jpg" alt="Galeri Dummy 04 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+                </div>
+            </div>
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/Event/2983746b1c6b1cbc5b3c0cecb71a78.png" aria-label="Perbesar foto: Galeri Dummy 05" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/Event/2983746b1c6b1cbc5b3c0cecb71a78.png" alt="Galeri Dummy 05 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/e4b5d70f4e37c839b766a1e0cf5ca1.jpg" aria-label="Perbesar foto: Galeri Dummy 06" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/e4b5d70f4e37c839b766a1e0cf5ca1.jpg" alt="Galeri Dummy 06 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/Event/43bb185ad118dea4ae65d7d74b1ba0.png" aria-label="Perbesar foto: Galeri Dummy 07" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/Event/43bb185ad118dea4ae65d7d74b1ba0.png" alt="Galeri Dummy 07 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/2ff1a8e20ea5478b84af9b753c1ca6.jpg" aria-label="Perbesar foto: Galeri Dummy 08" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/2ff1a8e20ea5478b84af9b753c1ca6.jpg" alt="Galeri Dummy 08 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+                </div>
+            </div>
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/a8e6c1ec7a2cd8138420419db37646.jpeg" aria-label="Perbesar foto: Galeri Dummy 09" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/a8e6c1ec7a2cd8138420419db37646.jpeg" alt="Galeri Dummy 09 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/Event/20d7b4f950a86294ba8d97c089cbfc.png" aria-label="Perbesar foto: Galeri Dummy 10" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/Event/20d7b4f950a86294ba8d97c089cbfc.png" alt="Galeri Dummy 10 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/2d1778897e76c0ce1ec1adde9643b6.jpg" aria-label="Perbesar foto: Galeri Dummy 11" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/2d1778897e76c0ce1ec1adde9643b6.jpg" alt="Galeri Dummy 11 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/e78f2ebd7f87d9e34ad5d9daf1c56d.jpg" aria-label="Perbesar foto: Galeri Dummy 12" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/e78f2ebd7f87d9e34ad5d9daf1c56d.jpg" alt="Galeri Dummy 12 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+                </div>
+            </div>
+            <div class="swiper-slide gallery-page">
+                <div class="gallery-grid">
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/9e4840b33db6accf37e8bbef1b7677.jpg" aria-label="Perbesar foto: Galeri Dummy 13" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/9e4840b33db6accf37e8bbef1b7677.jpg" alt="Galeri Dummy 13 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/Event/ea59ef1f57a673747759d74f64a206.png" aria-label="Perbesar foto: Galeri Dummy 14" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/Event/ea59ef1f57a673747759d74f64a206.png" alt="Galeri Dummy 14 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/94b0ea59db1a23b04568a31a3f422c.jpg" aria-label="Perbesar foto: Galeri Dummy 15" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/94b0ea59db1a23b04568a31a3f422c.jpg" alt="Galeri Dummy 15 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+<button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://rsuelsyifa.id/assets/img/gallery/ed4d236a55df1b7244f129b7bba03a.58" aria-label="Perbesar foto: Galeri Dummy 16" aria-haspopup="dialog">
+          <img src="https://rsuelsyifa.id/assets/img/gallery/ed4d236a55df1b7244f129b7bba03a.58" alt="Galeri Dummy 16 RSU El-Syifa" width="480" height="480" loading="lazy" decoding="async">
+          <span class="gallery-overlay"><i class="bi bi-zoom-in" aria-hidden="true"></i></span>
+        </button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="unit-pagination-controls" hidden aria-label="Navigasi galeri">

@@ -1,4 +1,4 @@
-// One Swiper slide contains a complete page: 6 cards on desktop, 4 on smaller screens.
+// One Swiper slide contains a complete page of four cards.
 (function () {
   'use strict';
   var root = document.querySelector('#galeri');
@@ -7,9 +7,12 @@
   var wrapper = viewport.querySelector('.swiper-wrapper');
   var cards = Array.from(wrapper.querySelectorAll('.gallery-item'));
   var controls = root.querySelector('.unit-pagination-controls');
-  var desktop = window.matchMedia('(min-width: 992px)');
   var swiper;
-  var pageSize = 0;
+  var pageSize = Number(viewport.dataset.pageSize);
+  if (!Number.isInteger(pageSize) || pageSize < 1) {
+    console.error('Gallery page size must be a positive integer.');
+    return;
+  }
 
   function updateStatus(instance) {
     var page = instance.activeIndex;
@@ -26,7 +29,6 @@
     var focusedCard = cards.find(function (card) { return card.contains(document.activeElement); });
     if (focusedCard) firstVisible = cards.indexOf(focusedCard);
     if (swiper) swiper.destroy(true, true);
-    pageSize = desktop.matches ? 6 : 4;
     wrapper.replaceChildren();
     wrapper.classList.remove('gallery-grid');
     for (var start = 0; start < cards.length; start += pageSize) {
@@ -54,5 +56,4 @@
     if (focusedCard) focusedCard.focus({ preventScroll: true });
   }
   renderPages();
-  desktop.addEventListener('change', renderPages);
 })();

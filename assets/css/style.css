@@ -1088,8 +1088,21 @@ a {
 }
 
 /* Room card */
-.room-page-grid .room-card { height: 100%; }
-.room-page-grid .card-body { overflow-wrap: anywhere; }
+.room-page-grid .room-card { display: flex; flex-direction: column; height: 100%; }
+.room-page-grid .room-photo { flex-shrink: 0; }
+.room-page-grid .room-photo { position: relative; overflow: hidden; }
+.room-page-grid .room-photo .card-img-top { display: block; transition: transform 400ms ease; }
+.room-page-grid .room-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(7, 51, 47, .38), rgba(247, 165, 130, .22)); opacity: 0; transition: opacity 400ms ease; pointer-events: none; }
+.room-page-grid .room-badge { z-index: 1; pointer-events: none; }
+@media (hover: hover) {
+  .room-page-grid .room-photo:hover .card-img-top { transform: scale(1.08); }
+  .room-page-grid .room-photo:hover::after { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .room-page-grid .room-photo .card-img-top, .room-page-grid .room-photo::after { transition: none; }
+  .room-page-grid .room-photo:hover .card-img-top { transform: none; }
+}
+.room-page-grid .card-body { display: flex; flex-direction: column; flex: 1; overflow-wrap: anywhere; }
 @media (max-width: 575.98px) {
   .room-page-grid { --bs-gutter-x: 0.75rem; --bs-gutter-y: 1rem; }
   .room-page-grid .card-body { padding: 0.875rem 0.625rem; }
@@ -1333,7 +1346,7 @@ a {
 .article-browser .article-carousel-cover .card-date { color: rgba(255, 255, 255, 0.8); }
 .article-browser .article-carousel-cover .btn { margin-top: 0.5rem !important; }
 .article-carousel-cover .article-category { background: var(--color-accent); }
-.article-tools { padding: clamp(1rem, 3vw, 2rem); background: var(--color-white); border-radius: 1rem; }
+.article-tools { padding: clamp(1rem, 3vw, 2rem); background: linear-gradient(120deg, #e3f1ea 0%, #f7fcfc 52%, #ffe4d6 100%); border: 1px solid rgba(7, 51, 47, .08); border-radius: 1rem; box-shadow: var(--shadow-card-light); }
 .article-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .article-tags button { border: 1px solid #cddbd7; border-radius: 2rem; padding: 0.5rem 1rem; min-height: 44px; background: var(--color-white); color: var(--color-primary); font: inherit; font-size: 0.85rem; }
 .article-tags button[aria-pressed="true"], .article-tags button:hover { background: var(--color-primary); color: var(--color-white); }
@@ -1359,7 +1372,7 @@ a {
    ======================== */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
 }
 

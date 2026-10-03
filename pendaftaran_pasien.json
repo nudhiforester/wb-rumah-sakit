@@ -1,0 +1,36 @@
+[
+    {
+        "pendaftaran_id": "REG-20261004-0D399F07C6",
+        "nama_pasien": "Solihul Hadi",
+        "kontak_pasien": "08123456789",
+        "jadwal_id": "DOK-010-4",
+        "dokter_id": "DOK-010",
+        "poli_id": "POL-UMUM",
+        "nama_dokter": "dr. Guruh Ardhianto Kurniawan, MM., CP.NLP",
+        "tanggal_kunjungan": "2026-10-08",
+        "jam_mulai": "09:00",
+        "jam_selesai": "13:00",
+        "ruangan": "Ruang Periksa 10",
+        "nomor_antrian": 1,
+        "status": "terdaftar",
+        "dummy": true,
+        "waktu_daftar": "2026-10-04T01:54:24+07:00"
+    },
+    {
+        "pendaftaran_id": "REG-20261004-D750622D80",
+        "nama_pasien": "Solihul Hadi",
+        "kontak_pasien": "08123456789",
+        "jadwal_id": "DOK-001-1",
+        "dokter_id": "DOK-001",
+        "poli_id": "POL-PD",
+        "nama_dokter": "dr. Laudry Amsal Elfa Gustanar Sp. PD",
+        "tanggal_kunjungan": "2026-10-05",
+        "jam_mulai": "08:00",
+        "jam_selesai": "14:00",
+        "ruangan": "Ruang Periksa 01",
+        "nomor_antrian": 1,
+        "status": "terdaftar",
+        "dummy": true,
+        "waktu_daftar": "2026-10-04T02:34:52+07:00"
+    }
+]

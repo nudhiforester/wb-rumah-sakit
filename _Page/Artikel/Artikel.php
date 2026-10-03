@@ -1,3 +1,7 @@
+<?php
+$articles = require __DIR__ . '/ArticleData.php';
+$escapeArticle = static fn($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+?>
 <!-- PAGE HEADER -->
   <section class="section-dark" style="padding: 4rem 0 3rem;">
     <div class="container text-center">
@@ -43,78 +47,20 @@
       <p id="articleResultStatus" role="status" aria-live="polite" class="small text-secondary"></p>
       <div class="row g-4" id="articlePageGrid">
 
-        <div class="col-md-6 col-lg-4 fade-in-up">
+        <?php foreach ($articles as $article): ?>
+        <div class="col-md-6 col-lg-4 fade-in-up" data-tag="<?= $escapeArticle($article['tag']) ?>">
           <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/5e7fd3a1878d3dfc736bf02657989f51.jpg" class="card-img-top" alt="Tips Menjaga Kesehatan Jantung" loading="lazy">
+            <img src="<?= $escapeArticle($article['cover']) ?>" class="card-img-top" alt="<?= $escapeArticle($article['alt']) ?>" loading="lazy">
             <div class="card-body">
-              <span class="card-date">20 September 2026</span>
-              <h5 class="card-title mt-2">Tips Menjaga Kesehatan Jantung di Usia Muda</h5>
-              <p class="card-text">Penyakit jantung bukan hanya menyerang lansia. Kenali cara menjaga kesehatan jantung sejak dini dengan pola hidup sehat dan olahraga teratur.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
+              <span class="article-category"><?= $escapeArticle($article['tag']) ?></span>
+              <span class="card-date"><?= $escapeArticle($article['published']) ?></span>
+              <h5 class="card-title mt-2"><?= $escapeArticle($article['title']) ?></h5>
+              <p class="card-text"><?= $escapeArticle($article['summary']) ?></p>
+              <a href="index.php?page=DetailArtikel&amp;title=<?= rawurlencode($article['slug']) ?>" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/ee82309347da2e13c5092b4de12706eb.jpg" class="card-img-top" alt="Pentingnya Imunisasi Anak" loading="lazy">
-            <div class="card-body">
-              <span class="card-date">15 September 2026</span>
-              <h5 class="card-title mt-2">Pentingnya Imunisasi Lengkap untuk Anak</h5>
-              <p class="card-text">Imunisasi merupakan langkah penting untuk melindungi anak dari berbagai penyakit berbahaya. Ketahui jadwal imunisasi yang tepat.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/_DSC0495.JPG" class="card-img-top" alt="Bakti Sosial Kesehatan" loading="lazy">
-            <div class="card-body">
-              <span class="card-date">10 September 2026</span>
-              <h5 class="card-title mt-2">RSU El-Syifa Gelar Bakti Sosial Kesehatan</h5>
-              <p class="card-text">RSU El-Syifa menggelar bakti sosial pemeriksaan kesehatan gratis untuk masyarakat sekitar sebagai bentuk kepedulian terhadap kesehatan.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="card-elsyifa article-card">
-            <img src="https://6aa97c5b9422e77b387ff09b.imgix.net/Artikel/6e1b6283f7bba9d47fed76ce8252662a.jpg" class="card-img-top" alt="Gejala Diabetes" loading="lazy">
-            <div class="card-body">
-              <span class="card-date">5 September 2026</span>
-              <h5 class="card-title mt-2">Mengenal Gejala Diabetes dan Cara Pencegahannya</h5>
-              <p class="card-text">Diabetes menjadi penyakit kronis yang terus meningkat. Kenali gejalanya dan cara pencegahan efektif untuk hidup lebih sehat.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="card-elsyifa article-card">
-            <img src="https://silamparitv.disway.id/upload/34030eaea25fd783d3f42f92f0dc3851.jpg" class="card-img-top" alt="Pola Hidup Sehat" loading="lazy">
-            <div class="card-body">
-              <span class="card-date">1 September 2026</span>
-              <h5 class="card-title mt-2">5 Kebiasaan Pola Hidup Sehat yang Mudah Diterapkan</h5>
-              <p class="card-text">Menjaga kesehatan tidak harus sulit. Berikut 5 kebiasaan sederhana yang bisa Anda lakukan setiap hari untuk tubuh yang lebih sehat.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 fade-in-up">
-          <div class="card-elsyifa article-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqzwCUYSEfrbdoJLqw1iIZgAE8kLo713CrppgXiVExT28Xqeyok96Xs5Y&s=10" class="card-img-top" alt="Seminar Kesehatan" loading="lazy">
-            <div class="card-body">
-              <span class="card-date">28 Agustus 2026</span>
-              <h5 class="card-title mt-2">RSU El-Syifa Adakan Seminar Kesehatan Masyarakat</h5>
-              <p class="card-text">Dalam rangka meningkatkan kesadaran kesehatan, RSU El-Syifa mengadakan seminar terbuka untuk masyarakat umum.</p>
-              <a href="#" class="btn btn-elsyifa btn-sm mt-2">Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-          </div>
-        </div>
-
+        <?php endforeach; ?>
       </div>
       <p id="articleEmpty" class="text-center py-5" hidden>Tidak ada artikel yang cocok. Coba kata kunci atau tag lain.</p>
       <nav class="doctor-pagination" id="articlePagination" aria-label="Halaman daftar artikel" hidden>
@@ -124,15 +70,4 @@
       </nav>
     </div>
   </section>
-  <div class="modal fade" id="articleDemoModal" tabindex="-1" aria-labelledby="articleDemoTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="articleDemoTitle"></h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup artikel"></button>
-        </div>
-        <div class="modal-body"><p class="small text-secondary">Artikel dummy untuk demonstrasi tampilan.</p><p id="articleDemoText"></p></div>
-      </div>
-    </div>
-  </div>
-  <script src="assets/js/article-browser.js?v=2" defer></script>
+  <script src="assets/js/article-browser.js?v=5" defer></script>

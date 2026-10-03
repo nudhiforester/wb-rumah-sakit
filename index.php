@@ -3,8 +3,10 @@
   $pages = [
     'Beranda' => '_Page/Beranda/Beranda.php',
     'Dokter' => '_Page/Dokter/Dokter.php',
+    'daftar_antrian' => '_Page/Dokter/DaftarAntrian.php',
     'RuangRawat' => '_Page/RuangRawat/RuangRawat.php',
     'Artikel' => '_Page/Artikel/Artikel.php',
+    'DetailArtikel' => '_Page/Artikel/DetailArtikel.php',
     'Testimonial' => '_Page/Testimonial/Testimonial.php',
     'Galeri' => '_Page/Galeri/Galeri.php',
     'Unit' => '_Page/Unit/Unit.php',
@@ -15,6 +17,16 @@
   if ($pageFile === null) {
     http_response_code(404);
     $pageFile = '_Page/Error/Unknown-Page.php';
+  }
+  if ($page === 'DetailArtikel') {
+    $articleTitle = $_GET['title'] ?? '';
+    $articleData = require __DIR__ . '/_Page/Artikel/ArticleData.php';
+    if (!is_string($articleTitle) || !in_array($articleTitle, array_column($articleData, 'slug'), true)) {
+      http_response_code(404);
+    }
+  }
+  if ($page === 'daftar_antrian') {
+    require __DIR__ . '/_Page/Dokter/PendaftaranData.php';
   }
 ?>
 <!DOCTYPE html>

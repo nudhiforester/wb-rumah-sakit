@@ -199,7 +199,13 @@ $(document).ready(function () {
       var message = hasSchedule
         ? 'Halo RSU El-Syifa, saya ingin menanyakan jadwal praktik resmi dan pendaftaran antrean untuk ' + name + '. Mohon informasi ketersediaannya.'
         : 'Halo RSU El-Syifa, jadwal ' + name + ' belum tersedia di situs. Mohon informasi jadwal praktik terbaru dan cara pendaftarannya.';
-      action.href = 'https://wa.me/6285910577797?text=' + encodeURIComponent(message);
+      action.href = hasSchedule ? 'index.php?page=daftar_antrian' : 'https://wa.me/6285910577797?text=' + encodeURIComponent(message);
+      action.target = hasSchedule ? '_self' : '_blank';
+      document.getElementById('doctorScheduleActionNote').textContent = hasSchedule
+        ? 'Pilih jadwal dan isi data pasien pada halaman pendaftaran antrian.'
+        : 'Tombol membuka WhatsApp rumah sakit untuk konfirmasi jadwal.';
+      delete action.dataset.dokterId;
+      if (window.loadDummyDoctorSchedule) window.loadDummyDoctorSchedule(trigger);
     });
   }
 
