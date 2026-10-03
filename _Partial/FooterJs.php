@@ -7,6 +7,13 @@
   <script src="assets/js/gallery.js"></script>
   <script src="assets/js/main.js?v=48"></script>
 
-  <script src="assets/js/stats-nurse.js?v=53"></script>
+  <script src="assets/js/stats-nurse.js?v=54"></script>
+
+  <?php
+    if(!empty($_GET['page']) && $_GET['page'] === 'Unit') {
+      echo '<script src="_Page/Unit/Unit.js?v=54"></script>';
+    }
+  ?>
+
   <!-- Preloader -->
   <script src="assets/js/preloader.js"></script>

@@ -7,6 +7,8 @@
     'Artikel' => '_Page/Artikel/Artikel.php',
     'Testimonial' => '_Page/Testimonial/Testimonial.php',
     'Galeri' => '_Page/Galeri/Galeri.php',
+    'Unit' => '_Page/Unit/Unit.php',
+    'DetailUnit' => '_Page/Unit/DetailUnit.php',
   ];
   $page = $_GET['page'] ?? 'Beranda';
   $pageFile = is_string($page) ? ($pages[$page] ?? null) : null;

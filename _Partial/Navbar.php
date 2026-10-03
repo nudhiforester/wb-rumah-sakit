@@ -13,24 +13,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'Beranda' ? ' active' : '' ?>"<?= $page === 'Beranda' ? ' aria-current="page"' : '' ?> href="index.php">Beranda</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'Dokter' ? ' active' : '' ?>"<?= $page === 'Dokter' ? ' aria-current="page"' : '' ?> href="index.php?page=Dokter">Dokter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'RuangRawat' ? ' active' : '' ?>"<?= $page === 'RuangRawat' ? ' aria-current="page"' : '' ?> href="index.php?page=RuangRawat">Ruang Rawat</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'Artikel' ? ' active' : '' ?>"<?= $page === 'Artikel' ? ' aria-current="page"' : '' ?> href="index.php?page=Artikel">Artikel &amp; Berita</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'Testimonial' ? ' active' : '' ?>"<?= $page === 'Testimonial' ? ' aria-current="page"' : '' ?> href="index.php?page=Testimonial">Testimonial</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link<?= $page === 'Galeri' ? ' active' : '' ?>"<?= $page === 'Galeri' ? ' aria-current="page"' : '' ?> href="index.php?page=Galeri">Galeri</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Beranda' ? ' active' : '' ?>"<?= $page === 'Beranda' ? ' aria-current="page"' : '' ?> href="index.php">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Dokter' ? ' active' : '' ?>"<?= $page === 'Dokter' ? ' aria-current="page"' : '' ?> href="index.php?page=Dokter">Dokter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'RuangRawat' ? ' active' : '' ?>"<?= $page === 'RuangRawat' ? ' aria-current="page"' : '' ?> href="index.php?page=RuangRawat">Ruang Rawat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Artikel' ? ' active' : '' ?>"<?= $page === 'Artikel' ? ' aria-current="page"' : '' ?> href="index.php?page=Artikel">Artikel &amp; Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Testimonial' ? ' active' : '' ?>"<?= $page === 'Testimonial' ? ' aria-current="page"' : '' ?> href="index.php?page=Testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Galeri' ? ' active' : '' ?>"<?= $page === 'Galeri' ? ' aria-current="page"' : '' ?> href="index.php?page=Galeri">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link<?= $page === 'Unit' ? ' active' : '' ?>"<?= $page === 'Unit' ? ' aria-current="page"' : '' ?> href="index.php?page=Unit">Unit</a>
+                </li>
             </ul>
         </div>
     </div>
